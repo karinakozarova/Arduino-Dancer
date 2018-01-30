@@ -1,7 +1,7 @@
-int left_pin = 8;
-int right_pin = 9;
-int up_pin = 10;
-int down_pin = 11;
+const int left_pin = 8;
+const int right_pin = 9;
+const int up_pin = 10;
+const int down_pin = 11;
 
 
 void setup() {
@@ -18,21 +18,21 @@ void setup() {
 void loop() {
   int left_status =  digitalRead(left_pin); // reads button state
   if(!left_status){
-    Serial.println("left"); // was clicked
+    Serial.println("left"); // left was clicked
   }
 
   int right_status =  digitalRead(right_pin); // reads button state
   if(!right_status){
-    Serial.println("right"); // was clicked
+    Serial.println("right"); // right was clicked
   }
 
   int up_status =  digitalRead(up_pin); // reads button state
   if(!up_status){
-    Serial.println("up"); // was clicked
+    Serial.println("up"); // up was clicked
   }
   
   int down_status =  digitalRead(down_pin); // reads button state
   if(!down_status){
-    Serial.println("down"); // was clicked
+    Serial.println("down"); // down was clicked
   }
 }
