@@ -12,19 +12,27 @@ void setup() {
   pinMode(down_pin,INPUT_PULLUP);
 
   pinMode(13,OUTPUT); // diode that lights up
-  Serial.begin(9600);
+  Serial.begin(9600); // for writing to serial monitor
 }
 
 void loop() {
   int left_status =  digitalRead(left_pin); // reads button state
-  if(!left_status)Serial.println("left"); // was clicked
+  if(!left_status){
+    Serial.println("left"); // was clicked
+  }
 
   int right_status =  digitalRead(right_pin); // reads button state
-  if(!right_status)Serial.println("right"); // was clicked
+  if(!right_status){
+    Serial.println("right"); // was clicked
+  }
 
   int up_status =  digitalRead(up_pin); // reads button state
-  if(!up_status)Serial.println("up"); // was clicked
-
+  if(!up_status){
+    Serial.println("up"); // was clicked
+  }
+  
   int down_status =  digitalRead(down_pin); // reads button state
-  if(!down_status)Serial.println("down"); // was clicked
+  if(!down_status){
+    Serial.println("down"); // was clicked
+  }
 }
