@@ -18,7 +18,7 @@ buttonState = digitalRead(buttonPin);
   if (buttonState == LOW ) {
     if(state==1){
       state = 0;
-      Serial.print("The button with the coresponding pin was pressed!");
+      Serial.print("The button was pressed!");
     }
   } else {
     state=1;
