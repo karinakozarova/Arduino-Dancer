@@ -10,7 +10,6 @@ void setup() {
   pinMode(up_pin,INPUT_PULLUP);
   pinMode(down_pin,INPUT_PULLUP);
   
-  pinMode(13,OUTPUT); // diode that lights up
   Serial.begin(9600); // for writing to serial monitor
 }
 
