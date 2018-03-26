@@ -160,8 +160,6 @@ public struct HSBColor
     {
         float h, s;
 
-        //check special case black (color.b==0): interpolate neither hue nor saturation!
-        //check special case grey (color.s==0): don't interpolate hue!
         if (a.b == 0)
         {
             h = b.h;
