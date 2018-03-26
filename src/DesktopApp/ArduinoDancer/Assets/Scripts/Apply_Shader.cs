@@ -36,9 +36,7 @@ public class Apply_Shader : MonoBehaviour {
 
     void OnDisable()
     {
-        if (_material)
-        {
-            DestroyImmediate(_material);
-        }
+        if (_material)  DestroyImmediate(_material);
+
     }
 }

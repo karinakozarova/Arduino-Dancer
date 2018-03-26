@@ -30,12 +30,12 @@ public class Heartbeat_Controller : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
 
         //Song_Parser parser = new Song_Parser();
-        // Song_Parser.Metadata meta = parser.Parse(@"C:\Users\josh\CloudStation\Game Jam March 2016\Heartbeat\Assets\Music Files\Kung-Fu\KUNG%20FU%20FIGHTING.sm");
         Song_Parser.Metadata meta = Game_Data.chosenSongData;
 
-        //TODO: Load Audio
         StartCoroutine(LoadTrack(meta.musicPath, meta));
-
+        debugText.text = "Title: " + meta.title +
+                        "\nArtist: " + meta.artist;
+/*
         debugText.text = "Title: " + meta.title +
                          "\nArtist: " + meta.artist +
                          "\nBanner Path: " + meta.bannerPath +
@@ -46,7 +46,7 @@ public class Heartbeat_Controller : MonoBehaviour {
                          "\nSample Length: " + meta.sampleLength +
                          "\nBPM: " + meta.bpm +
                          "\n\nValid: " + meta.valid;
-
+        */
         if (meta.bpm != 0) originalBPM = meta.bpm;
         else originalBPM = 120;
         currentBPM = originalBPM;
@@ -56,18 +56,15 @@ public class Heartbeat_Controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		ControllerHandler ();
-        //BPMDecay ();
         SongBPMChange();
         HeartBeat();
 
         //Debug text
-        debugText2.text = "Song BPM: " + originalBPM + "\nCurrent BPM: " + currentBPM + "\nCurrent Pitch: " + audioSource.pitch;
+       debugText2.text = "Song BPM: " + originalBPM + "\nCurrent BPM: " + currentBPM + "\nCurrent Pitch: " + audioSource.pitch;
 
-        if (!audioSource.isPlaying && songLoaded)
-        {
-            //Song is over
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        }
+       //Song is over
+        if (!audioSource.isPlaying && songLoaded) UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        
     }
 
     IEnumerator LoadTrack(string path, Song_Parser.Metadata meta)
@@ -76,18 +73,14 @@ public class Heartbeat_Controller : MonoBehaviour {
         string url = string.Format("file://{0}", path);
         WWW www = new WWW(url);
 
-        while (!www.isDone)
-        {
-            yield return null;
-        }
+        while (!www.isDone) yield return null;
+        
 
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 
-        Debug.Log("Loaded");
-
+        // Debug.Log("Loaded");
         songLoaded = true;
-
         audioSource.Play();
 
         GameObject manager = GameObject.FindGameObjectWithTag("GameManager");
@@ -114,18 +107,14 @@ public class Heartbeat_Controller : MonoBehaviour {
 	void ControllerHandler()
 	{
         beatTimer += Time.deltaTime;
-
-        if (anim.GetBool("isBeat"))
-		{
-			anim.SetBool ("isBeat", false);
-		}
-
+        if (anim.GetBool("isBeat")) anim.SetBool ("isBeat", false);
+		
 		if (Input.GetKeyDown (KeyCode.Space)) 
 		{
             editingBPM = true;
 			anim.SetBool ("isBeat", true);
             
-            //Forcefully calc the BPM
+            //calc the BPM
             prevBPM = currentBPM;
             currentBPM = (1.0f / beatTimer) * 60.0f;
 
@@ -134,24 +123,18 @@ public class Heartbeat_Controller : MonoBehaviour {
             beatTimer = 0.0f;
         }
 
-        if ((decayTimer -= Time.deltaTime) <= 0)
-        {
-            editingBPM = false;
-        }
+        if ((decayTimer -= Time.deltaTime) <= 0) editingBPM = false;
 	}
 
     void SongBPMChange()
     {
-        /* when kari stops testing -> uncomment
+        //when kari stops testing -> uncomment
         float newPitch = currentBPM / originalBPM;
         if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit)
-        {
             audioSource.pitch = Mathf.Lerp(audioSource.pitch, currentBPM / originalBPM, Time.deltaTime);
-        }
         else
-        {
             audioSource.pitch = currentBPM / originalBPM;
-        }
-          */
+        
+         
     }
 }

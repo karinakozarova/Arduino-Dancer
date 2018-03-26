@@ -9,7 +9,6 @@ public class Menu_Handler : MonoBehaviour {
 
     [DllImport("user32.dll")]
     private static extern void FolderBrowserDialog();
-
     public Text warningText;
 
 	// Use this for initialization
@@ -29,10 +28,8 @@ public class Menu_Handler : MonoBehaviour {
             warningText.enabled = true;
             StartCoroutine(DespawnWarning());
         }
-        else
-        {
-            SceneManager.LoadScene(1);
-        }
+        else SceneManager.LoadScene(1);
+        
     }
 
     IEnumerator DespawnWarning()
@@ -54,14 +51,9 @@ public class Menu_Handler : MonoBehaviour {
         if (result == System.Windows.Forms.DialogResult.OK)
         {
             Game_Data.songDirectory = fbd.SelectedPath;
-            if (Song_Parser.IsNullOrWhiteSpace(Game_Data.songDirectory))
-            {
-                Game_Data.validSongDir = false;
-            }
-            else
-            {
-                Game_Data.validSongDir = true;
-            }
+            if (Song_Parser.IsNullOrWhiteSpace(Game_Data.songDirectory)) Game_Data.validSongDir = false;
+            else Game_Data.validSongDir = true;
+            
         }
     }
 }

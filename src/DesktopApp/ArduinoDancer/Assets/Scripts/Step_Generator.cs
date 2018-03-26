@@ -48,22 +48,11 @@ public class Step_Generator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (leftAnim.GetBool("isLit"))
-        {
-            leftAnim.SetBool("isLit", false);
-        }
-        if (downAnim.GetBool("isLit"))
-        {
-            downAnim.SetBool("isLit", false);
-        }
-        if (rightAnim.GetBool("isLit"))
-        {
-            rightAnim.SetBool("isLit", false);
-        }
-        if (upAnim.GetBool("isLit"))
-        {
-            upAnim.SetBool("isLit", false);
-        }
+        if (leftAnim.GetBool("isLit")) leftAnim.SetBool("isLit", false);
+        if (downAnim.GetBool("isLit")) downAnim.SetBool("isLit", false);
+        if (rightAnim.GetBool("isLit")) rightAnim.SetBool("isLit", false);
+        if (upAnim.GetBool("isLit")) upAnim.SetBool("isLit", false);
+        
 
         if (isInit && barCount < noteData.bars.Count)
         {
@@ -77,7 +66,6 @@ public class Step_Generator : MonoBehaviour {
             if (songTimer - timeOffset >= (barExecutedTime - barTime))
             {
                 StartCoroutine(PlaceBar(noteData.bars[barCount++]));
-
                 barExecutedTime += barTime;
             }
         }

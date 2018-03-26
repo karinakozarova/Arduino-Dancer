@@ -117,7 +117,6 @@ public class Song_Selector : MonoBehaviour {
 
     void StartSong(Song_Parser.Metadata songData)
     {
-        //Do stuff
         Debug.Log(songData.title + " Chosen!");
         Game_Data.chosenSongData = songData;
         SceneManager.LoadScene(2);

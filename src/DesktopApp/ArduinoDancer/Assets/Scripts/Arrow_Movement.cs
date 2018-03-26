@@ -46,25 +46,10 @@ public class Arrow_Movement : MonoBehaviour {
         tempPos.y -= arrowSpeed;
         transform.position = tempPos;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && dir == direction.left)
-        {
-            CheckLocation();
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) && dir == direction.down)
-        {
-            CheckLocation();
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow) && dir == direction.up)
-        {
-            CheckLocation();
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow) && dir == direction.right)
-        {
-            CheckLocation();
-        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && dir == direction.left) CheckLocation();
+        if (Input.GetKeyDown(KeyCode.DownArrow) && dir == direction.down) CheckLocation();
+        if (Input.GetKeyDown(KeyCode.UpArrow) && dir == direction.up) CheckLocation();
+        if (Input.GetKeyDown(KeyCode.RightArrow) && dir == direction.right) CheckLocation();
 
         //Missed
         if (transform.position.y < arrowBack.transform.position.y - strumOffset)

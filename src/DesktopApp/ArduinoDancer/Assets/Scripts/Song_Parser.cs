@@ -7,15 +7,12 @@ using System;
 
 public class Song_Parser
 {
-
     private string filePath;
-
     private const float sampleLengthDefault = 15.0f;
 
     public struct Metadata
     {
         public bool valid;
-
         public string title;
         public string subtitle;
         public string artist;
@@ -26,7 +23,6 @@ public class Song_Parser
         public float sampleStart;
         public float sampleLength;
         public float bpm;
-
         public NoteData beginner;
         public bool beginnerExists;
         public NoteData easy;
@@ -91,10 +87,8 @@ public class Song_Parser
         {
             string line = fileData[i].Trim();
 
-            if (line.StartsWith("//"))
-            {
-                continue;
-            }
+            if (line.StartsWith("//")) continue;
+            
             else if (line.StartsWith("#"))
             {
                 string key = line.Substring(0, line.IndexOf(':')).Trim('#').Trim(':');
@@ -168,13 +162,12 @@ public class Song_Parser
                 if (line.ToLower().Contains("dance-double"))
                 {
                     for(int j = i; j < fileData.Count; j++)
-                    {
                         if (fileData[j].Contains(";"))
                         {
                             i = j - 1;
                             break;
                         }
-                    }
+                    
                 }
 
                 //Check if it's a difficulty
@@ -195,10 +188,8 @@ public class Song_Parser
                             i = j - 1;
                             break;
                         }
-                        else
-                        {
-                            noteChart.Add(noteLine);
-                        }
+                        else noteChart.Add(noteLine);
+                        
                     }
 
                     switch (difficulty.ToLower().Trim())
@@ -266,25 +257,12 @@ public class Song_Parser
                 note.down = false;
                 note.up = false;
                 note.right = false;
-
+               
+                if (line[0] != '0') note.left = true;
+                if (line[1] != '0') note.down = true;
+                if (line[2] != '0') note.up = true;                
+                if (line[3] != '0') note.right = true;
                 
-                if (line[0] != '0')
-                {
-                    note.left = true;
-                }
-                if (line[1] != '0')
-                {
-                    note.down = true;
-                }
-                if (line[2] != '0')
-                {
-                    note.up = true;
-                }
-                if (line[3] != '0')
-                {
-                    note.right = true;
-                }
-
                 bar.Add(note);
             }
         }
@@ -292,20 +270,11 @@ public class Song_Parser
         return noteData;
     }
 
-
-    //Because Unity doesnt have this fucking method like what the fuck
     public static bool IsNullOrWhiteSpace(string value)
     {
-        if (value != null)
-        {
-            for (int i = 0; i < value.Length; i++)
-            {
-                if (!char.IsWhiteSpace(value[i]))
-                {
-                    return false;
-                }
-            }
-        }
+        if (value != null)        
+            for (int i = 0; i < value.Length; i++)            
+                if (!char.IsWhiteSpace(value[i])) return false;               
         return true;
     }
 }
