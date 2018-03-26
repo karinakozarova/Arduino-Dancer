@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a0090b00d6af1804297f4ac83840d666
-timeCreated: 1458405931
+timeCreated: 1522097265
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,12 +16,12 @@ TextureImporter:
     21300018: arrowsheet_down_back_hit
     21300020: arrowsheet_up_back_hit
     21300022: arrowsheet_right_back_hit
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -33,10 +33,8 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
@@ -47,9 +45,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -57,12 +53,44 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: arrowsheet_left_back_hit
+    - serializedVersion: 2
+      name: arrowsheet_left_back_hit
       rect:
         serializedVersion: 2
         x: 0
@@ -73,7 +101,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_down_back_hit
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_down_back_hit
       rect:
         serializedVersion: 2
         x: 15
@@ -84,7 +114,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_up_back_hit
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_up_back_hit
       rect:
         serializedVersion: 2
         x: 28
@@ -95,7 +127,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_right_back_hit
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_right_back_hit
       rect:
         serializedVersion: 2
         x: 42
@@ -106,7 +140,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_left_back
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_left_back
       rect:
         serializedVersion: 2
         x: 0
@@ -117,7 +153,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_down_back
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_down_back
       rect:
         serializedVersion: 2
         x: 15
@@ -128,7 +166,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_up_back
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_up_back
       rect:
         serializedVersion: 2
         x: 28
@@ -139,7 +179,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_right_back
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_right_back
       rect:
         serializedVersion: 2
         x: 42
@@ -150,7 +192,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_left
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_left
       rect:
         serializedVersion: 2
         x: 0
@@ -161,7 +205,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_down
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_down
       rect:
         serializedVersion: 2
         x: 15
@@ -172,7 +218,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_up
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_up
       rect:
         serializedVersion: 2
         x: 28
@@ -183,7 +231,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: arrowsheet_right
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arrowsheet_right
       rect:
         serializedVersion: 2
         x: 42
@@ -194,6 +244,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

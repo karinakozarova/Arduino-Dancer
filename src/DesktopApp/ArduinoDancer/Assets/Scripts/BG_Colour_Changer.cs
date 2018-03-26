@@ -19,5 +19,6 @@ public class BG_Colour_Changer : MonoBehaviour {
         HSBColor randCol = new HSBColor(Mathf.PingPong(Time.time * speed, 1), 1, 1);
         randCol.s = randCol.s / 2;
         camera.backgroundColor = randCol.ToColor();
+        Camera.main.backgroundColor = randCol.ToColor();
     }
 }

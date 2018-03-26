@@ -18,7 +18,7 @@ public class Apply_Shader : MonoBehaviour {
         {
             if (_material == null)
             {
-                _material = new Material(shader);
+               // _material = new Material(shader);
                 _material.hideFlags = HideFlags.HideAndDontSave;
             }
             return _material;
