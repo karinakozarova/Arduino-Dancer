@@ -1,0 +1,229 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   22.21.13.8165
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 93)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll (this message is harmless)
+Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
+- Completed reload, in  1.404 seconds
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 283.018677 ms
+medium
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Drawing.dll (this message is harmless)
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Accessibility.dll (this message is harmless)
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libc
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Mono.Posix.dll (this message is harmless)
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libc
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
+Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Xml.dll (this message is harmless)
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.330567 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 322.
+Total: 0.463012 ms (FindLiveObjects: 0.042666 ms CreateObjectMapping: 0.013827 ms MarkObjects: 0.392691 ms  DeleteObjects: 0.013037 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.328296 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.403358 ms (FindLiveObjects: 0.030024 ms CreateObjectMapping: 0.011851 ms MarkObjects: 0.358320 ms  DeleteObjects: 0.002765 ms)
+
+hard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.486320 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.408098 ms (FindLiveObjects: 0.028444 ms CreateObjectMapping: 0.011851 ms MarkObjects: 0.355555 ms  DeleteObjects: 0.011851 ms)
+
+Parsing
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parsing Dir: C:\Users\Karina\Documents\ArduinoDancerMusic | Amount: 16
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\(Gpop) Gangnam Style\Gangnam Style - bn.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\BUTTERFLY\Butterfly.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\Have You Never Been Mellow\Have You Never Been Mellow.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\KUNG FU FIGHTING\KUNG FU FIGHTING.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\LET'S GET DOWN\LET'S GET DOWN.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\Little Bitch\Little Bitch.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\MAKE IT BETTER\MAKE IT BETTER.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\My Fire (UKS Remix)\My Fire (UKS Remix).png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\PARANOiA\PARANOiA.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\Party Rock Anthem\Party Rock Anthem.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\STRICTLY BUSINESS\STRICTLY BUSINESS.png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\That's The Way (I Like It)\That's The Way (I Like It).png
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Starting Preview for C:\Users\Karina\Documents\ArduinoDancerMusic\LET'S GET DOWN\LET'S GET DOWN.ogg
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Starting Preview for C:\Users\Karina\Documents\ArduinoDancerMusic\KUNG FU FIGHTING\KUNG FU FIGHTING.ogg
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Starting Preview for C:\Users\Karina\Documents\ArduinoDancerMusic\(Gpop) Gangnam Style\Gangnam Style.ogg
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gangnam Style Chosen!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnloadTime: 1.241283 ms
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 29.340445 ms (FindLiveObjects: 0.049382 ms CreateObjectMapping: 0.040296 ms MarkObjects: 28.552296 ms  DeleteObjects: 0.697283 ms)
+
+C:\Users\Karina\Documents\ArduinoDancerMusic\(Gpop) Gangnam Style\Gangnam Style.ogg
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: ec0 -> priority: 1 
+  Thread -> id: 19d4 -> priority: 1 
+  Thread -> id: 26e4 -> priority: 1 
+  Thread -> id: 58c -> priority: 1 

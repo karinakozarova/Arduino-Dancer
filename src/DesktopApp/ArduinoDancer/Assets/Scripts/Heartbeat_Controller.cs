@@ -58,9 +58,8 @@ public class Heartbeat_Controller : MonoBehaviour {
 		ControllerHandler ();
         SongBPMChange();
         HeartBeat();
-
         //Debug text
-       debugText2.text = "Song BPM: " + originalBPM + "\nCurrent BPM: " + currentBPM + "\nCurrent Pitch: " + audioSource.pitch;
+        debugText2.text = "Song BPM: " + originalBPM + "\nCurrent BPM: " + currentBPM;// +"\nCurrent Pitch: " + audioSource.pitch;
 
        //Song is over
         if (!audioSource.isPlaying && songLoaded) UnityEngine.SceneManagement.SceneManager.LoadScene(1);
@@ -75,7 +74,6 @@ public class Heartbeat_Controller : MonoBehaviour {
 
         while (!www.isDone) yield return null;
         
-
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 

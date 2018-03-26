@@ -30,6 +30,11 @@ public class Score_Handler : MonoBehaviour {
 	void Update () {
         multiplier = heartAudio.pitch;
         scoreText.text = "Score: " + score;
+        //Load a scene by the name "SceneName" if you press the W key.
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
 	}
 
     void AddScore()

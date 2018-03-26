@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A718ED45-A1B9-EE26-0BD7-DD4D0B7D400C}</ProjectGuid>
+    <ProjectGuid>{62BE95CE-1D2E-C46F-2E2A-31B209542823}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -70,7 +70,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="System.Windows.Forms">
- <HintPath>C:/Users/Karina/Downloads/Heartbeat-master/Heartbeat/Assets/Plugins/System.Windows.Forms.dll</HintPath>
+ <HintPath>C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/Assets/Plugins/System.Windows.Forms.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

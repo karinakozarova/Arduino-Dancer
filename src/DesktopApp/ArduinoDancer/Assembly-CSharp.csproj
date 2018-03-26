@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{964D7D85-1BC9-D4E8-5D08-51FFBDC2E0F3}</ProjectGuid>
+    <ProjectGuid>{79525459-42F9-AC86-4EE0-758E72C02F58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -84,12 +84,12 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="System.Windows.Forms">
- <HintPath>C:/Users/Karina/Downloads/Heartbeat-master/Heartbeat/Assets/Plugins/System.Windows.Forms.dll</HintPath>
+ <HintPath>C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/Assets/Plugins/System.Windows.Forms.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A718ED45-A1B9-EE26-0BD7-DD4D0B7D400C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{62BE95CE-1D2E-C46F-2E2A-31B209542823}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
