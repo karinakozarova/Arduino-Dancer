@@ -28,7 +28,7 @@ public class Arrow_Movement : MonoBehaviour {
             if (!stream.IsOpen) stream.Open();
         }
         catch{ }
-        stream.ReadTimeout = 1;
+        stream.ReadTimeout = 100000;
         gen = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Step_Generator>();
         scoreHandler = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Score_Handler>();
 
@@ -57,7 +57,7 @@ public class Arrow_Movement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+        int res = 0;
         arrowSpeed = gen.arrowSpeed;
         Vector3 tempPos = transform.position;
         tempPos.y -= arrowSpeed;
@@ -66,18 +66,48 @@ public class Arrow_Movement : MonoBehaviour {
         {
             try
             {
-                Debug.Log(stream.ReadByte());
+                res = stream.ReadByte();
+                //Debug.Log(res);
             }
             catch (System.Exception) {  }
         }
-
-
+        /*
         // change here to be not the keyboard button but the unity input!
-       bool isPressedDownLeft = Input.GetKeyDown(KeyCode.LeftArrow);
+        bool isPressedDownLeft = Input.GetKeyDown(KeyCode.LeftArrow);
         bool isPressedDownDown = Input.GetKeyDown(KeyCode.DownArrow);
         bool isPressedDownUp = Input.GetKeyDown(KeyCode.UpArrow);
         bool isPressedDownRight = Input.GetKeyDown(KeyCode.RightArrow);
-        
+        */
+
+        bool isPressedDownLeft = false;
+        bool isPressedDownDown = false;
+        bool isPressedDownUp = false;
+        bool isPressedDownRight = false;
+
+        if (res == 1)
+        {
+            isPressedDownLeft = true;
+            Debug.Log("Left");
+        }
+        else if (res == 2)
+        {
+            isPressedDownDown = true;
+            Debug.Log("Down");
+
+        }
+        else if (res == 3)
+        {
+            isPressedDownUp = true;
+            Debug.Log("Up");
+
+        }
+        else if (res == 4)
+        {
+            isPressedDownRight = true;
+            Debug.Log("Right");
+
+        }
+
         if (isPressedDownLeft && dir == direction.left) CheckLocation();
         if (isPressedDownDown && dir == direction.down) CheckLocation();
         if (isPressedDownUp&& dir == direction.up) CheckLocation();
