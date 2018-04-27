@@ -94,29 +94,34 @@ public class Arrow_Movement : MonoBehaviour {
         bool isPressedDownRight = Input.GetKeyDown(KeyCode.RightArrow);
         */
 
+        bool isPressedDownKeyboardLeft = Input.GetKeyDown(KeyCode.LeftArrow);
+        bool isPressedDownKeyboardDown = Input.GetKeyDown(KeyCode.DownArrow);
+        bool isPressedDownKeyboardUp = Input.GetKeyDown(KeyCode.UpArrow);
+        bool isPressedDownKeyboardRight = Input.GetKeyDown(KeyCode.RightArrow);
+
         bool isPressedDownLeft = false;
         bool isPressedDownDown = false;
         bool isPressedDownUp = false;
         bool isPressedDownRight = false;
 
-        if (res == 1)
+        if (res == 1 || isPressedDownKeyboardLeft)
         {
             isPressedDownLeft = true;
             Debug.Log("Left");
         }
-        else if (res == 2)
+        else if (res == 2 || isPressedDownKeyboardDown)
         {
             isPressedDownDown = true;
             Debug.Log("Down");
 
         }
-        else if (res == 3)
+        else if (res == 3 || isPressedDownKeyboardUp)
         {
             isPressedDownUp = true;
             Debug.Log("Up");
 
         }
-        else if (res == 4)
+        else if (res == 4 || isPressedDownKeyboardRight)
         {
             isPressedDownRight = true;
             Debug.Log("Right");
