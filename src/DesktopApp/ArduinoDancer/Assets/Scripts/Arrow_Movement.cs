@@ -67,15 +67,15 @@ public class Arrow_Movement : MonoBehaviour {
         transform.position = tempPos;
 
         // change here to be not the keyboard button but the unity input!
-       /* bool isPressedDownLeft = Input.GetKeyDown(KeyCode.LeftArrow);
+       bool isPressedDownLeft = Input.GetKeyDown(KeyCode.LeftArrow);
         bool isPressedDownDown = Input.GetKeyDown(KeyCode.DownArrow);
         bool isPressedDownUp = Input.GetKeyDown(KeyCode.UpArrow);
         bool isPressedDownRight = Input.GetKeyDown(KeyCode.RightArrow);
-        */
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && dir == direction.left) CheckLocation();
-        if (Input.GetKeyDown(KeyCode.DownArrow) && dir == direction.down) CheckLocation();
-        if (Input.GetKeyDown(KeyCode.UpArrow) && dir == direction.up) CheckLocation();
-        if (Input.GetKeyDown(KeyCode.RightArrow) && dir == direction.right) CheckLocation();
+        
+        if (isPressedDownLeft && dir == direction.left) CheckLocation();
+        if (isPressedDownDown && dir == direction.down) CheckLocation();
+        if (isPressedDownUp&& dir == direction.up) CheckLocation();
+        if (isPressedDownRight && dir == direction.right) CheckLocation();
 
         //Missed
         if (transform.position.y < arrowBack.transform.position.y - strumOffset)
