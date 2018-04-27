@@ -1,0 +1,42 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   22.21.13.8165
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 93)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\System.Windows.Forms.dll (this message is harmless)
+Loading C:\Users\Karina\Desktop\justsoftware_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Karina\Desktop\justsoftware_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 2.731456 ms
+medium
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 12e8 -> priority: 1 
+  Thread -> id: 3480 -> priority: 1 
+  Thread -> id: 27ec -> priority: 1 
+  Thread -> id: d34 -> priority: 1 
