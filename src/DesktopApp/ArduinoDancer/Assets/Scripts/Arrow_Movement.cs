@@ -17,18 +17,24 @@ public class Arrow_Movement : MonoBehaviour {
     public enum direction {  left, down, up, right };
     private const float strumOffset = 0.075f;
     private const float despawnTime = 1.5f;
-
-
+    
+    private  int start = 0;
     SerialPort stream = new SerialPort("COM3", 9600);
 
 	// Use this for initialization
 	void Start () {
         try
         {
-            if (!stream.IsOpen) stream.Open();
+            if (start == 0 && !stream.IsOpen)
+            {
+                Debug.Log("Stream is open");
+                stream.Open();
+
+            }
+            start += 1;
         }
-        catch { Debug.Log("stream.isopen.."); }
-        stream.ReadTimeout = 100000;
+        catch { Debug.Log("stream.is not open.."); }
+        stream.ReadTimeout = 2000000;
         gen = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Step_Generator>();
         scoreHandler = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Score_Handler>();
 
@@ -55,6 +61,12 @@ public class Arrow_Movement : MonoBehaviour {
         stream.Close();
     }
 
+    IEnumerator waiter()
+    {
+        //Wait for 4 seconds
+        yield return new WaitForSecondsRealtime(1);
+    }
+
     // Update is called once per frame
     void Update() {
         int res = 0;
@@ -66,12 +78,13 @@ public class Arrow_Movement : MonoBehaviour {
         {
             try
             {
+                     // waiter();
                 res = stream.ReadByte();
                 //Debug.Log(res);
             }
-            catch (System.Exception) {
-                Debug.Log("readybyte");
-            }
+            catch { }
+          
+         
         }
         /*
         // change here to be not the keyboard button but the unity input!
