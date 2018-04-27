@@ -27,7 +27,7 @@ public class Arrow_Movement : MonoBehaviour {
         {
             if (!stream.IsOpen) stream.Open();
         }
-        catch{ }
+        catch { Debug.Log("stream.isopen.."); }
         stream.ReadTimeout = 100000;
         gen = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Step_Generator>();
         scoreHandler = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Score_Handler>();
@@ -69,7 +69,9 @@ public class Arrow_Movement : MonoBehaviour {
                 res = stream.ReadByte();
                 //Debug.Log(res);
             }
-            catch (System.Exception) {  }
+            catch (System.Exception) {
+                Debug.Log("readybyte");
+            }
         }
         /*
         // change here to be not the keyboard button but the unity input!

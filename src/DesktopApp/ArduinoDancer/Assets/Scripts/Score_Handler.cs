@@ -39,8 +39,8 @@ public class Score_Handler : MonoBehaviour {
 
     void LoseScore()
     {
-        score -= scoreVal * multiplier;
-        if (score < 0) score = 0;
+        //score -= scoreVal * multiplier;
+       // if (score < 0) score = 0;
         
     }
 }
