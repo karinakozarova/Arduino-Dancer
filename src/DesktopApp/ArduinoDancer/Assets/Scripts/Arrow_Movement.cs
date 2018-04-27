@@ -17,7 +17,7 @@ public class Arrow_Movement : MonoBehaviour {
     private const float strumOffset = 0.075f;
     private const float despawnTime = 1.5f;
 
-    public string port = "COM4";
+    public string port = "COM3";
     public int baudrate = 9600;
 
 	// Use this for initialization
