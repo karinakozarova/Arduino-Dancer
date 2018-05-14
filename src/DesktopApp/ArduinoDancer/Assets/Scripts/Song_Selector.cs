@@ -42,7 +42,9 @@ public class Song_Selector : MonoBehaviour {
             audioSource.volume = 1.0f;
         }
 	}
-
+    /// <summary>
+    /// get song data when song is selected
+    /// </summary>
     void Parse()
     {
         Debug.Log("Parsing");
@@ -62,7 +64,7 @@ public class Song_Selector : MonoBehaviour {
                 //Song data isnt valid
                 continue;
             }
-            else
+            else // is valid
             {
                 GameObject songObj = (GameObject)Instantiate(songSelectionTemplate, songSelectionList.transform.position, Quaternion.identity);
                 songObj.GetComponentInChildren<Text>().text = songData.title + " - " + songData.artist;
@@ -91,33 +93,34 @@ public class Song_Selector : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// starts playing the song when user hoovers
+    /// </summary>
+    /// <param name="musicPath"> path to audio file</param>
+    /// <returns></returns>
     IEnumerator PreviewTrack(string musicPath)
     {
-        Debug.Log("Starting Preview for " + musicPath);
+       //  Debug.Log("Starting Preview for " + musicPath);
         string url = string.Format("file://{0}", musicPath);
         WWW www = new WWW(url);
 
-        while (!www.isDone)
-        {
-            yield return null;
-        }
-
+        while (!www.isDone) yield return null;
+    
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 
-        Debug.Log("Loaded");
-
         audioSource.Play();
         audioSource.time = audioStartTime;
-
         currentSongPath = musicPath;
-
         audioSource.volume = 0;
     }
 
+    /// <summary>
+    /// starts the selected song
+    /// </summary>
+    /// <param name="songData"> song metadata</param>
     void StartSong(Song_Parser.Metadata songData)
     {
-        Debug.Log(songData.title + " Chosen!");
         Game_Data.chosenSongData = songData;
         SceneManager.LoadScene(2);
     }

@@ -40,6 +40,7 @@ public class Song_Parser
         public List<List<Notes>> bars;
     }
 
+
     public struct Notes
     {
         public bool left;
@@ -49,7 +50,11 @@ public class Song_Parser
     }
 
     public enum difficulties { beginner, easy, medium, hard, challenge };
-
+    /// <summary>
+    /// parses song file 
+    /// </summary>
+    /// <param name="newFilePath"> file location <param>
+    /// <returns> songData </returns>
     public Metadata Parse(string newFilePath)
     {
         filePath = newFilePath;
@@ -78,22 +83,19 @@ public class Song_Parser
         List<string> fileData = File.ReadAllLines(filePath).ToList<string>();
 
         string fileDir = Path.GetDirectoryName(filePath);
-        if (!fileDir.EndsWith("\\") && !fileDir.EndsWith("/"))
-        {
-            fileDir += "\\";
-        }
+        if (!fileDir.EndsWith("\\") && !fileDir.EndsWith("/")) fileDir += "\\";
+        
 
         for (int i = 0; i < fileData.Count; i++)
         {
             string line = fileData[i].Trim();
 
             if (line.StartsWith("//")) continue;
-            
             else if (line.StartsWith("#"))
             {
-                string key = line.Substring(0, line.IndexOf(':')).Trim('#').Trim(':');
+                string key = line.Substring(0, line.IndexOf(':')).Trim('#').Trim(':').ToUpper();
 
-                switch (key.ToUpper())
+                switch (key)
                 {
                     case "TITLE":
                         songData.title = line.Substring(line.IndexOf(':')).Trim(':').Trim(';');
@@ -216,16 +218,18 @@ public class Song_Parser
                             break;
                     }
                 }
-                if (line.EndsWith(";"))
-                {
-                    inNotes = false;
-                }
+                if (line.EndsWith(";")) inNotes = false;
             }
         }
 
         return songData;
     }
 
+    /// <summary>
+    /// parses a list of strings to note
+    /// </summary>
+    /// <param name="notes">list of strings that will be parsed to note</param>
+    /// <returns> noteData </returns>
     private NoteData ParseNotes(List<string> notes)
     {
         NoteData noteData = new NoteData();
@@ -236,20 +240,14 @@ public class Song_Parser
         {
             string line = notes[i].Trim();
 
-            if (line.StartsWith(";"))
-            {
-                break;
-            }
+            if (line.StartsWith(";")) break;
 
             if (line.EndsWith(","))
             {
                 noteData.bars.Add(bar);
                 bar = new List<Notes>();
             }
-            else if (line.EndsWith(":"))
-            {
-                continue;
-            }
+            else if (line.EndsWith(":")) continue;
             else if (line.Length >= 4)
             {
                 Notes note = new Notes();
@@ -270,6 +268,11 @@ public class Song_Parser
         return noteData;
     }
 
+    /// <summary>
+    /// checks if a string is null or whitespace
+    /// </summary>
+    /// <param name="value"> the string that will be cheked for null or whitespace</param>
+    /// <returns>true or false</returns>
     public static bool IsNullOrWhiteSpace(string value)
     {
         if (value != null)        

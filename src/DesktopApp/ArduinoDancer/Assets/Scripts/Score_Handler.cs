@@ -32,13 +32,20 @@ public class Score_Handler : MonoBehaviour {
         scoreText.text = "Score: " + score;
 	}
 
+    /// <summary>
+    /// ++score when the arrow is missed
+    /// </summary>
     void AddScore()
     {
         score += scoreVal * multiplier;
     }
 
+    /// <summary>
+    /// Removes from score when the arrow is missed DEPRECATED
+    /// </summary>
     void LoseScore()
     {
+        // it's not cool for the little kids to remove from score, so this is DEPRECATED
         //score -= scoreVal * multiplier;
        // if (score < 0) score = 0;
         

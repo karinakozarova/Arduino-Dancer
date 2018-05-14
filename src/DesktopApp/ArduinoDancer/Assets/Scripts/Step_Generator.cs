@@ -70,7 +70,11 @@ public class Step_Generator : MonoBehaviour {
             }
         }
 	}
-
+    /// <summary>
+    /// place arrows depending on the bars
+    /// </summary>
+    /// <param name="bar"> list of song notes </param>
+    /// <returns></returns>
     IEnumerator PlaceBar(List<Song_Parser.Notes> bar)
     {
         for (int i = 0; i < bar.Count; i++)
@@ -99,6 +103,11 @@ public class Step_Generator : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// inits the steps
+    /// </summary>
+    /// <param name="newSongData">metadata</param>
+    /// <param name="newDifficulty">new difficulty</param>
     public void InitSteps(Song_Parser.Metadata newSongData, Song_Parser.difficulties newDifficulty)
     {
         songData = newSongData;
