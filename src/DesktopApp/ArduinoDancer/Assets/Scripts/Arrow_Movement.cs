@@ -18,23 +18,10 @@ public class Arrow_Movement : MonoBehaviour {
     private const float strumOffset = 0.075f;
     private const float despawnTime = 1.5f;
     
-    private  int start = 0;
-    SerialPort stream = new SerialPort("COM3", 9600);
 
 	// Use this for initialization
 	void Start () {
-        try
-        {
-            if (start == 0 && !stream.IsOpen)
-            {
-                Debug.Log("Stream is open");
-                stream.Open();
 
-            }
-            start += 1;
-        }
-        catch { Debug.Log("stream.is not open.."); }
-        stream.ReadTimeout = 2000000;
         gen = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Step_Generator>();
         scoreHandler = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Score_Handler>();
 
@@ -56,17 +43,6 @@ public class Arrow_Movement : MonoBehaviour {
 	}
 
 
-    public void Close()
-    {
-        stream.Close();
-    }
-
-    IEnumerator waiter()
-    {
-        //Wait for 4 seconds
-        yield return new WaitForSecondsRealtime(1);
-    }
-
     // Update is called once per frame
     void Update() {
         int res = 0;
@@ -74,54 +50,37 @@ public class Arrow_Movement : MonoBehaviour {
         Vector3 tempPos = transform.position;
         tempPos.y -= arrowSpeed;
         transform.position = tempPos;
-        if (stream.IsOpen)
-        {
-            try
-            {
-                     // waiter();
-                res = stream.ReadByte();
-                //Debug.Log(res);
-            }
-            catch { }
-          
-         
-        }
-        /*
-        // change here to be not the keyboard button but the unity input!
-        bool isPressedDownLeft = Input.GetKeyDown(KeyCode.LeftArrow);
-        bool isPressedDownDown = Input.GetKeyDown(KeyCode.DownArrow);
-        bool isPressedDownUp = Input.GetKeyDown(KeyCode.UpArrow);
-        bool isPressedDownRight = Input.GetKeyDown(KeyCode.RightArrow);
-        */
 
-        bool isPressedDownKeyboardLeft = Input.GetKeyDown(KeyCode.LeftArrow);
-        bool isPressedDownKeyboardDown = Input.GetKeyDown(KeyCode.DownArrow);
-        bool isPressedDownKeyboardUp = Input.GetKeyDown(KeyCode.UpArrow);
-        bool isPressedDownKeyboardRight = Input.GetKeyDown(KeyCode.RightArrow);
+
+        // support both WASD and arrows from keyboard as input 
+        bool isPressedDownKeyboardLeft = Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A);
+        bool isPressedDownKeyboardDown = Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S);
+        bool isPressedDownKeyboardUp = Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
+        bool isPressedDownKeyboardRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D);
 
         bool isPressedDownLeft = false;
         bool isPressedDownDown = false;
         bool isPressedDownUp = false;
         bool isPressedDownRight = false;
 
-        if (res == 1 || isPressedDownKeyboardLeft)
+        if ( isPressedDownKeyboardLeft)
         {
             isPressedDownLeft = true;
             Debug.Log("Left");
         }
-        else if (res == 2 || isPressedDownKeyboardDown)
+        else if (isPressedDownKeyboardDown)
         {
             isPressedDownDown = true;
             Debug.Log("Down");
 
         }
-        else if (res == 3 || isPressedDownKeyboardUp)
+        else if (isPressedDownKeyboardUp)
         {
             isPressedDownUp = true;
             Debug.Log("Up");
 
         }
-        else if (res == 4 || isPressedDownKeyboardRight)
+        else if (isPressedDownKeyboardRight)
         {
             isPressedDownRight = true;
             Debug.Log("Right");

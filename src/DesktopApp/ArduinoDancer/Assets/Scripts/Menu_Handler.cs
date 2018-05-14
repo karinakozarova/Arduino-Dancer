@@ -21,6 +21,9 @@ public class Menu_Handler : MonoBehaviour {
 	
 	}
 
+    /// <summary>
+    /// starts game
+    /// </summary>
     public void StartGameClick()
     {
         if (!Game_Data.validSongDir)
@@ -38,11 +41,17 @@ public class Menu_Handler : MonoBehaviour {
         warningText.enabled = false;
     }
 
+    /// <summary>
+    /// Loads scene 3
+    /// </summary>
     public void DifficultyClick()
     {
         SceneManager.LoadScene(3);
     }
 
+    /// <summary>
+    /// opens menu browser dialog to select song directory
+    /// </summary>
     public void FindSongsClick()
     {
         System.Windows.Forms.FolderBrowserDialog fbd = new System.Windows.Forms.FolderBrowserDialog();

@@ -28,25 +28,22 @@ public class Heartbeat_Controller : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
         audioSource = GetComponent<AudioSource>();
-
-        //Song_Parser parser = new Song_Parser();
         Song_Parser.Metadata meta = Game_Data.chosenSongData;
 
         StartCoroutine(LoadTrack(meta.musicPath, meta));
-        debugText.text = "Title: " + meta.title +
-                        "\nArtist: " + meta.artist;
-/*
-        debugText.text = "Title: " + meta.title +
-                         "\nArtist: " + meta.artist +
-                         "\nBanner Path: " + meta.bannerPath +
-                         "\nBackground Path: " + meta.backgroundPath +
-                         "\nMusic Path: " + meta.musicPath +
-                         "\nOffset: " + meta.offset +
-                         "\nSample Start: " + meta.sampleStart +
-                         "\nSample Length: " + meta.sampleLength +
-                         "\nBPM: " + meta.bpm +
-                         "\n\nValid: " + meta.valid;
-        */
+        /*  debugText.text = "Title: " + meta.title + "\nArtist: " + meta.artist;
+     
+               debugText.text = "Title: " + meta.title +
+                                "\nArtist: " + meta.artist +
+                                "\nBanner Path: " + meta.bannerPath +
+                                "\nBackground Path: " + meta.backgroundPath +
+                                "\nMusic Path: " + meta.musicPath +
+                                "\nOffset: " + meta.offset +
+                                "\nSample Start: " + meta.sampleStart +
+                                "\nSample Length: " + meta.sampleLength +
+                                "\nBPM: " + meta.bpm +
+                                "\n\nValid: " + meta.valid;
+               */
         if (meta.bpm != 0) originalBPM = meta.bpm;
         else originalBPM = 120;
         currentBPM = originalBPM;
@@ -58,12 +55,7 @@ public class Heartbeat_Controller : MonoBehaviour {
 		ControllerHandler ();
         SongBPMChange();
         HeartBeat();
-        //Debug text
-     //   debugText2.text = "Song BPM: " + originalBPM + "\nCurrent BPM: " + currentBPM;// +"\nCurrent Pitch: " + audioSource.pitch;
-
-       //Song is over
-        if (!audioSource.isPlaying && songLoaded) UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        
+        if (!audioSource.isPlaying && songLoaded) UnityEngine.SceneManagement.SceneManager.LoadScene(1); //Song is over
     }
 
     IEnumerator LoadTrack(string path, Song_Parser.Metadata meta)
@@ -77,7 +69,6 @@ public class Heartbeat_Controller : MonoBehaviour {
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 
-        // Debug.Log("Loaded");
         songLoaded = true;
         audioSource.Play();
 
@@ -85,6 +76,9 @@ public class Heartbeat_Controller : MonoBehaviour {
         manager.GetComponent<Step_Generator>().InitSteps(meta, Game_Data.difficulty);
     }
 
+    /// <summary>
+    /// beat the heart
+    /// </summary>
     void HeartBeat()
     {
         if (songLoaded && !editingBPM)
@@ -101,7 +95,9 @@ public class Heartbeat_Controller : MonoBehaviour {
             }
         }
     }
-
+    /// <summary>
+    /// change BPM by sending the new rhythm using the spacebar
+    /// </summary>
 	void ControllerHandler()
 	{
         beatTimer += Time.deltaTime;
@@ -124,6 +120,9 @@ public class Heartbeat_Controller : MonoBehaviour {
         if ((decayTimer -= Time.deltaTime) <= 0) editingBPM = false;
 	}
 
+    /// <summary>
+    /// changes pitch of song
+    /// </summary>
     void SongBPMChange()
     {
         //when kari stops testing -> uncomment
