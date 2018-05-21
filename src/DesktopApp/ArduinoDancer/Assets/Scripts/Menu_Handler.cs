@@ -49,6 +49,12 @@ public class Menu_Handler : MonoBehaviour {
         SceneManager.LoadScene(3);
     }
 
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
     /// <summary>
     /// opens menu browser dialog to select song directory
     /// </summary>
