@@ -43,7 +43,7 @@ public class Heartbeat_Controller : MonoBehaviour {
                                 "\nSample Length: " + meta.sampleLength +
                                 "\nBPM: " + meta.bpm +
                                 "\n\nValid: " + meta.valid;
-               */
+        */
         if (meta.bpm != 0) originalBPM = meta.bpm;
         else originalBPM = 120;
         currentBPM = originalBPM;

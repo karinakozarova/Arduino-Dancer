@@ -2,6 +2,7 @@
 using System.Collections;
 using System.IO.Ports;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Arrow_Movement : MonoBehaviour {
 
@@ -85,6 +86,10 @@ public class Arrow_Movement : MonoBehaviour {
             isPressedDownRight = true;
             Debug.Log("Right");
 
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("ingame");
         }
 
         if (isPressedDownLeft && dir == direction.left) CheckLocation();
