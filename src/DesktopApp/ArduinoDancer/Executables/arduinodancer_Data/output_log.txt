@@ -23,48 +23,64 @@ Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopAp
 Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll (this message is harmless)
 Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
-- Completed reload, in  0.235 seconds
+- Completed reload, in  0.222 seconds
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 3.454809 ms
+UnloadTime: 4.085326 ms
 medium
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.960681 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.435545 ms
 
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 315.
-Total: 0.259160 ms (FindLiveObjects: 0.048197 ms CreateObjectMapping: 0.019357 ms MarkObjects: 0.174221 ms  DeleteObjects: 0.016592 ms)
-
-medium
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 0.277332 ms (FindLiveObjects: 0.027654 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.220049 ms  DeleteObjects: 0.014222 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.447209 ms
+UnloadTime: 1.077331 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 251.
-Total: 1.510318 ms (FindLiveObjects: 0.047802 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.143407 ms  DeleteObjects: 1.304096 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 342.
+Total: 0.315258 ms (FindLiveObjects: 0.038320 ms CreateObjectMapping: 0.019753 ms MarkObjects: 0.252444 ms  DeleteObjects: 0.003555 ms)
+
+easy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.704789 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 315.
+Total: 0.257184 ms (FindLiveObjects: 0.039111 ms CreateObjectMapping: 0.031604 ms MarkObjects: 0.170666 ms  DeleteObjects: 0.014222 ms)
+
+easy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.429036 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 324.
+Total: 1.626861 ms (FindLiveObjects: 0.074271 ms CreateObjectMapping: 0.024493 ms MarkObjects: 0.244542 ms  DeleteObjects: 1.282368 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3254 -> priority: 1 
-  Thread -> id: 1c3c -> priority: 1 
-  Thread -> id: 3274 -> priority: 1 
-  Thread -> id: c7c -> priority: 1 
+  Thread -> id: 3098 -> priority: 1 
+  Thread -> id: 3060 -> priority: 1 
+  Thread -> id: 1f68 -> priority: 1 
+  Thread -> id: 2144 -> priority: 1 
