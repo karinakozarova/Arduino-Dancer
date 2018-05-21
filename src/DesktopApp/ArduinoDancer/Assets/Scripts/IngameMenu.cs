@@ -14,4 +14,14 @@ public class IngameMenu : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void RenderControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void RenderScore()
+    {
+        SceneManager.LoadScene("Score");
+    }
 }

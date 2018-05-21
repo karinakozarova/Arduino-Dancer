@@ -49,6 +49,13 @@ public class Menu_Handler : MonoBehaviour {
         SceneManager.LoadScene(3);
     }
 
+    /// <summary>
+    /// Loads tutorial scene
+    /// </summary>
+    public void StartTutorial()
+    {
+        SceneManager.LoadScene("Тutorials");
+    }
 
 
 
