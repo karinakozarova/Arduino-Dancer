@@ -50,6 +50,11 @@ public class Menu_Handler : MonoBehaviour {
     }
 
 
+
+
+    /// <summary>
+    /// quits game
+    /// </summary>
     public void Quit()
     {
         Application.Quit();
