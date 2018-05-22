@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/testingArduino.unity
+- path: Assets/Scenes/Heartbeat.unity
   isLoaded: 1
   isActive: 1
