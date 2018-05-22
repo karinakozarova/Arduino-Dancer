@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 881, y: 471}
-  m_MaxSize: {x: 16006, y: 14021}
+  m_MinSize: {x: 881, y: 321}
+  m_MaxSize: {x: 16006, y: 8021}
   vertical: 0
-  controlID: 19550
+  controlID: 783
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -70,7 +70,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 997
     height: 731
-  m_MinSize: {x: 604, y: 471}
-  m_MaxSize: {x: 12004, y: 14021}
+  m_MinSize: {x: 604, y: 321}
+  m_MaxSize: {x: 12004, y: 8021}
   vertical: 1
-  controlID: 19551
+  controlID: 784
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 604, y: 221}
   m_MaxSize: {x: 12004, y: 4021}
   vertical: 0
-  controlID: 19552
+  controlID: 785
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,9 +202,9 @@ MonoBehaviour:
     height: 424
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80edfeff
-    m_LastClickedID: -70272
-    m_ExpandedIDs: 12effeffcc15ffff4a17ffff681cffff461effff7c23ffffd22effffc630ffff6e31ffff2832ffff2e32ffff3c32ffff4a32ffff5232ffff6c32ffff7c32ffff9832ffffd238ffffca39ffff823affff863affff923affff9e3affffa43affffbc3affffca3affffe43affff823cffff2a3dffffe63dffffee3dfffff63dffff003effff0a3effff263effff383effff543effff0042ffff7842ffff3043ffff3443ffff3843ffff3e43ffff4443ffff5c43ffff6a43ffff8243ffff564afffff04affffa84bffffac4bffffb04bffffb64bffffbc4bffffd44bffffe24bfffffa4bffff82d0ffff9cf7ffff86f9ffffe4fbffff0000000096270000b4270000a84e0000ba4e0000e04e0000ea4e000078690000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: e4f1ffff72f6ffffd2f9ffffe4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 0
     width: 286
     height: 445
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -281,14 +281,14 @@ MonoBehaviour:
     width: 282
     height: 424
   m_SceneLighting: 0
-  lastFramingTime: 4267.424939575404
+  lastFramingTime: 205.93653501387058
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -307.5, y: 15, z: 0}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -307.5, y: 15, z: 0}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 30
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -315,9 +315,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 644.34564
+    m_Target: 22
     speed: 2
-    m_Value: 644.34564
+    m_Value: 22
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -431,8 +431,8 @@ MonoBehaviour:
     y: 0
     width: 489
     height: 445
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -456,14 +456,14 @@ MonoBehaviour:
     y: 445
     width: 997
     height: 286
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -501,19 +501,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scene Music
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scene Music
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 10}
-    m_SelectedIDs: 7c250000
-    m_LastClickedID: 9596
-    m_ExpandedIDs: 0000000098230000c6230000c8230000f8240000a62500001a260000ea260000102700001427000018270000202700002227000024270000262700002827000000ca9a3bffffff7f
+    m_SelectedIDs: aa250000
+    m_LastClickedID: 9642
+    m_ExpandedIDs: 000000009c230000ca230000cc230000fc240000aa2500001e2600000c27000032270000362700003a270000422700004427000046270000482700004a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000098230000c6230000c8230000f8240000a62500001a260000ea260000102700001427000018270000202700002227000024270000262700002827000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009c230000ca230000cc230000fc240000aa2500001e2600000c27000032270000362700003a270000422700004427000046270000482700004a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -566,8 +566,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 80edfeff
-    m_LastClickedInstanceID: -70272
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 781b000050a40100961b0000760000008800000020010000be1d00005a4000008840000078220000d8200000082100005e210000841f0000842100006021000092840600de52f8ffdeef000054280000ae070000740600003c05000050050000fe040000fc0400000c0500007e050000ea0400003e1c00005e1c0000460500004a050000ea1b0000ec1b0000421c0000941c0000ee16fffff01b0000541c000092050000acc9fefff804000036050000f2040000fa24000018250000f82400004425000000000000
     m_RenameOverlay:
@@ -618,10 +618,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 53
-    y: 550
-    width: 1212
-    height: 250
+    x: 0
+    y: 537
+    width: 995
+    height: 265
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
