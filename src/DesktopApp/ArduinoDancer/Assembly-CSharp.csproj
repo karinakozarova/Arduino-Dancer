@@ -58,10 +58,12 @@
      <Compile Include="Assets\Scripts\Menu_Arrow.cs" />
      <Compile Include="Assets\Scripts\Menu_Focus.cs" />
      <Compile Include="Assets\Scripts\Menu_Handler.cs" />
+     <Compile Include="Assets\Scripts\Quit_Tutorial.cs" />
      <Compile Include="Assets\Scripts\Score_Handler.cs" />
      <Compile Include="Assets\Scripts\Song_Parser.cs" />
      <Compile Include="Assets\Scripts\Song_Selector.cs" />
      <Compile Include="Assets\Scripts\Step_Generator.cs" />
+     <Compile Include="Assets\quitScene.cs" />
      <Compile Include="Assets\quitVideo.cs" />
      <None Include="Assets\CRTShader.shader" />
  <Reference Include="UnityEngine.UI">

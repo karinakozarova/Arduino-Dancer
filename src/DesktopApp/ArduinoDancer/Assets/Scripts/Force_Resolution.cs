@@ -5,6 +5,7 @@ public class Force_Resolution : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Screen.SetResolution(1600, 800, false);
+        Debug.Log("forces resolution");
+      //  Screen.SetResolution(1600, 800, false);
 	}
 }
