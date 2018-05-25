@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editing_BPM_UI.cs" />
-     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Apply_Shader.cs" />
      <Compile Include="Assets\Scripts\Arrow_Movement.cs" />
      <Compile Include="Assets\Scripts\BG_Colour_Changer.cs" />
@@ -59,14 +58,13 @@
      <Compile Include="Assets\Scripts\Menu_Arrow.cs" />
      <Compile Include="Assets\Scripts\Menu_Focus.cs" />
      <Compile Include="Assets\Scripts\Menu_Handler.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Quit_Tutorial.cs" />
      <Compile Include="Assets\Scripts\Score_Handler.cs" />
      <Compile Include="Assets\Scripts\Song_Parser.cs" />
      <Compile Include="Assets\Scripts\Song_Selector.cs" />
      <Compile Include="Assets\Scripts\Step_Generator.cs" />
      <Compile Include="Assets\Scripts\testingArduino.cs" />
-     <Compile Include="Assets\quitScene.cs" />
-     <Compile Include="Assets\quitVideo.cs" />
      <None Include="Assets\CRTShader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
