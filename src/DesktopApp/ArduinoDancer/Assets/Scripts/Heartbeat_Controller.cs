@@ -31,19 +31,7 @@ public class Heartbeat_Controller : MonoBehaviour {
         Song_Parser.Metadata meta = Game_Data.chosenSongData;
 
         StartCoroutine(LoadTrack(meta.musicPath, meta));
-        /*  debugText.text = "Title: " + meta.title + "\nArtist: " + meta.artist;
-     
-               debugText.text = "Title: " + meta.title +
-                                "\nArtist: " + meta.artist +
-                                "\nBanner Path: " + meta.bannerPath +
-                                "\nBackground Path: " + meta.backgroundPath +
-                                "\nMusic Path: " + meta.musicPath +
-                                "\nOffset: " + meta.offset +
-                                "\nSample Start: " + meta.sampleStart +
-                                "\nSample Length: " + meta.sampleLength +
-                                "\nBPM: " + meta.bpm +
-                                "\n\nValid: " + meta.valid;
-        */
+
         if (meta.bpm != 0) originalBPM = meta.bpm;
         else originalBPM = 120;
         currentBPM = originalBPM;
