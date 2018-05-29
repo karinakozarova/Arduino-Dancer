@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\BG_Audio.cs" />
      <Compile Include="Assets\Scripts\BG_Colour_Changer.cs" />
      <Compile Include="Assets\Scripts\Difficulty_Menu_Handler.cs" />
-     <Compile Include="Assets\Scripts\Force_Resolution.cs" />
      <Compile Include="Assets\Scripts\Game_Data.cs" />
      <Compile Include="Assets\Scripts\Heartbeat_Controller.cs" />
      <Compile Include="Assets\Scripts\IngameMenu.cs" />
