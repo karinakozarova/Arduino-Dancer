@@ -39,7 +39,6 @@ public class Step_Generator : MonoBehaviour {
 	void Start () {
         heart = GameObject.FindGameObjectWithTag("Player");
         heartAudio = heart.GetComponent<AudioSource>();
-
         leftAnim = leftArrowBack.GetComponent<Animator>();
         downAnim = downArrowBack.GetComponent<Animator>();
         upAnim = upArrowBack.GetComponent<Animator>();

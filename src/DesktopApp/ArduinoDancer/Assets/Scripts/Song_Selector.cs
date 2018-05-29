@@ -33,24 +33,17 @@ public class Song_Selector : MonoBehaviour {
             audioSource.time = audioStartTime;
         }
 
-        if (audioSource.volume < 0.95f)
-        {
-            audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, Time.deltaTime);
-        }
-        else
-        {
-            audioSource.volume = 1.0f;
-        }
+        if (audioSource.volume < 0.95f) audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, Time.deltaTime);
+        else audioSource.volume = 1.0f;
+        
 	}
     /// <summary>
     /// get song data when song is selected
     /// </summary>
     void Parse()
     {
-        Debug.Log("Parsing");
         DirectoryInfo info = new DirectoryInfo(Game_Data.songDirectory);
         FileInfo[] smFiles = info.GetFiles("*.sm", SearchOption.AllDirectories);
-        Debug.Log("Parsing Dir: " + Game_Data.songDirectory + " | Amount: " + smFiles.Length);
         for (int i = 0; i < smFiles.Length; i++)
         {
             Song_Parser parser = new Song_Parser();
@@ -59,17 +52,12 @@ public class Song_Selector : MonoBehaviour {
             audioStartTime = songData.sampleStart;
             audioLength = songData.sampleLength;
 
-            if (!songData.valid)
-            {
-                //Song data isnt valid
-                continue;
-            }
-            else // is valid
+            if (songData.valid)
             {
                 GameObject songObj = (GameObject)Instantiate(songSelectionTemplate, songSelectionList.transform.position, Quaternion.identity);
                 songObj.GetComponentInChildren<Text>().text = songData.title + " - " + songData.artist;
                 songObj.transform.parent = songSelectionList.transform;
-                songObj.transform.localScale = new Vector3(1, 1, 1); //Scale changes for some reason - reset it
+                songObj.transform.localScale = new Vector3(1, 1, 1); 
 
                 //Get access to the button control
                 Button songBtn = songObj.GetComponentInChildren<Button>();
@@ -77,7 +65,6 @@ public class Song_Selector : MonoBehaviour {
                 {
                     Texture2D texture = new Texture2D(275, 52);
                     texture.LoadImage(File.ReadAllBytes(songData.bannerPath));
-                    Debug.Log(songData.bannerPath);
                     songBtn.image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
                     songBtn.image.material.SetColor("_Color", Color.white);
                     songObj.GetComponentInChildren<Text>().enabled = false;

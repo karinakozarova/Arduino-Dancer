@@ -71,8 +71,7 @@ public class Song_Parser
 
         Metadata songData = new Metadata();
         //Initialise Metadata
-        //If it encounters any major errors during parsing, this is set to false and the song cannot be selected
-        songData.valid = true;
+        songData.valid = true;         //If it encounters any major errors during parsing, this is set to false and the song cannot be selected
         songData.beginnerExists = false;
         songData.easyExists = false;
         songData.mediumExists = false;

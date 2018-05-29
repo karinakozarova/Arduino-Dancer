@@ -12,7 +12,6 @@ public class testingArduino : MonoBehaviour
         {
             Debug.Log("Stream is open");
             stream.Open();
-
         }
 	}
 	
@@ -23,7 +22,6 @@ public class testingArduino : MonoBehaviour
         {
             try
             {
-                // waiter();
                 res = stream.ReadChar();
                 // res = stream.ReadByte();
                 Debug.Log(res);
