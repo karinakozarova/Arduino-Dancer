@@ -16,10 +16,7 @@ public class BG_Audio : MonoBehaviour {
             Destroy(this.gameObject);
             return;
         }
-        else
-        {
-            instance = this;
-        }
+        else instance = this;
 
         DontDestroyOnLoad(this.gameObject);
     }

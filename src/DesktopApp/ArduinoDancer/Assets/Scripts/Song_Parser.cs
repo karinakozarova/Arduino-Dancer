@@ -50,6 +50,7 @@ public class Song_Parser
     }
 
     public enum difficulties { beginner, easy, medium, hard, challenge };
+
     /// <summary>
     /// parses song file 
     /// </summary>
@@ -59,9 +60,8 @@ public class Song_Parser
     {
         filePath = newFilePath;
 
-        if (IsNullOrWhiteSpace(filePath))
+        if (IsNullOrWhiteSpace(filePath)) //Error
         {
-            //Error
             Metadata tempMeta = new Metadata();
             tempMeta.valid = false;
             return tempMeta;

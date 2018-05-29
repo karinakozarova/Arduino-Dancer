@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editing_BPM_UI.cs" />
      <Compile Include="Assets\Scripts\Apply_Shader.cs" />
      <Compile Include="Assets\Scripts\Arrow_Movement.cs" />
      <Compile Include="Assets\Scripts\BG_Audio.cs" />

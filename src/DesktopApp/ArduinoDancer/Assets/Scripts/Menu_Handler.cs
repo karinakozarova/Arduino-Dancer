@@ -11,16 +11,6 @@ public class Menu_Handler : MonoBehaviour {
     private static extern void FolderBrowserDialog();
     public Text warningText;
 
-	// Use this for initialization
-	void Start () {
-        Debug.Log(Game_Data.difficulty.ToString());
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
     /// <summary>
     /// starts game
     /// </summary>

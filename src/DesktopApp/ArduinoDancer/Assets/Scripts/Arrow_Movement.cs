@@ -48,8 +48,6 @@ public class Arrow_Movement : MonoBehaviour {
     void Update() {
         if (PauseMenu.isPaused == false)
         {
-
-            int res = 0;
             arrowSpeed = gen.arrowSpeed;
             Vector3 tempPos = transform.position;
             tempPos.y -= arrowSpeed;
@@ -62,43 +60,15 @@ public class Arrow_Movement : MonoBehaviour {
             bool isPressedDownKeyboardUp = Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
             bool isPressedDownKeyboardRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D);
 
-            bool isPressedDownLeft = false;
-            bool isPressedDownDown = false;
-            bool isPressedDownUp = false;
-            bool isPressedDownRight = false;
-
-            if (isPressedDownKeyboardLeft)
-            {
-                isPressedDownLeft = true;
-                Debug.Log("Left");
-            }
-            else if (isPressedDownKeyboardDown)
-            {
-                isPressedDownDown = true;
-                Debug.Log("Down");
-
-            }
-            else if (isPressedDownKeyboardUp)
-            {
-                isPressedDownUp = true;
-                Debug.Log("Up");
-
-            }
-            else if (isPressedDownKeyboardRight)
-            {
-                isPressedDownRight = true;
-                Debug.Log("Right");
-
-            }
-            else if (Input.GetKeyDown(KeyCode.Q))
-            {
+            
+            if (Input.GetKeyDown(KeyCode.Q))
                 SceneManager.LoadScene("ingame");
-            }
+            
 
-            if (isPressedDownLeft && dir == direction.left) CheckLocation();
-            if (isPressedDownDown && dir == direction.down) CheckLocation();
-            if (isPressedDownUp && dir == direction.up) CheckLocation();
-            if (isPressedDownRight && dir == direction.right) CheckLocation();
+            if (isPressedDownKeyboardLeft && dir == direction.left) CheckLocation();
+            if (isPressedDownKeyboardDown && dir == direction.down) CheckLocation();
+            if (isPressedDownKeyboardUp && dir == direction.up) CheckLocation();
+            if (isPressedDownKeyboardRight && dir == direction.right) CheckLocation();
 
             //Missed
             if (transform.position.y < arrowBack.transform.position.y - strumOffset)

@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine.UI;
 
 public class Score_Handler : MonoBehaviour {
-
     public float score = 0.0f;
     public float multiplier = 1.0f;
     public Text scoreText;
@@ -38,16 +37,5 @@ public class Score_Handler : MonoBehaviour {
     void AddScore()
     {
         score += scoreVal * multiplier;
-    }
-
-    /// <summary>
-    /// Removes from score when the arrow is missed DEPRECATED
-    /// </summary>
-    void LoseScore()
-    {
-        // it's not cool for the little kids to remove from score, so this is DEPRECATED
-        //score -= scoreVal * multiplier;
-       // if (score < 0) score = 0;
-        
     }
 }

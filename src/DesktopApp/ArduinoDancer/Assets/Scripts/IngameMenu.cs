@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class IngameMenu : MonoBehaviour {
     string mainMenuScene = "Main Menu";
+    string controlsScene = "Controls";
+    string scoreScene = "Score";
+
     public void RenderMainMenu()
     {
         SceneManager.LoadScene(mainMenuScene);
