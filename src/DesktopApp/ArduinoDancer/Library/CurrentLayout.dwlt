@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 545}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1493
     height: 765
-  m_MinSize: {x: 950, y: 545}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1493
     height: 715
-  m_MinSize: {x: 683, y: 495}
-  m_MaxSize: {x: 14004, y: 14045}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 39457
+  controlID: 10685
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1216
     height: 715
-  m_MinSize: {x: 406, y: 495}
-  m_MaxSize: {x: 10002, y: 14045}
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 39458
+  controlID: 10707
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1216
     height: 444
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 39459
+  controlID: 10639
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,9 +368,9 @@ MonoBehaviour:
     height: 423
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 22c1feff98cffeffb0f2feff743affffb686ffff9e90ffff6c92ffffec93ffff4a95ffffc896ffffe29bffff4cbbffffc2bfffff42c0ffffc0c0ffff64c8ffffe8cbffffdaeaffff8afaffffe4fbffff000000008227000094270000fc270000c84300003c4400006c4a0000944a0000f04a00005056000078560000a0560000d4560000725a0000985a0000ae5a0000ca5a0000ec5a0000145b0000265b0000705b0000985b0000be5b0000d45b0000f05b0000125c00002c5c00003a5c00004c5c0000625c00006c5c00007e5c0000965c0000
+    m_SelectedIDs: 52650000
+    m_LastClickedID: 25938
+    m_ExpandedIDs: 469dfeff229ffeffb09ffeff64a0feff68a0feff76a0feff7aa0feff7ea0feff9ca0feffaaa0feffb2a0feffc83cffffa051ffff169effff5cb9ffffcef8ffffa6faffffe4fbffff000000007a2700008c2700009e270000a8270000de270000e4270000ee2700005e6500006e650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Main Menu
+  - Song Selection
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -420,14 +420,14 @@ MonoBehaviour:
     width: 911
     height: 423
   m_SceneLighting: 0
-  lastFramingTime: 2391.045540758732
+  lastFramingTime: 746.3193929163033
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.2601179, y: -2.5604768, z: 90}
+    m_Target: {x: 1.4205024, y: -0.094725974, z: 90}
     speed: 2
-    m_Value: {x: 0.2601179, y: -2.5604768, z: 90}
+    m_Value: {x: 1.4205024, y: -0.094725974, z: 90}
   m_RenderMode: 30
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -454,9 +454,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 20.55957
+    m_Target: 12.257071
     speed: 2
-    m_Value: 20.55957
+    m_Value: 12.257071
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -517,10 +517,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 525
+    x: 311
     y: 100
-    width: 520
-    height: 415
+    width: 911
+    height: 423
   m_ViewPositions:
     m_KeySerializationHelper:
     - {fileID: 110722044, guid: 2411aa179d644624092186da474522a1, type: 2}
@@ -535,7 +535,7 @@ MonoBehaviour:
     - {x: 214.8, y: 229.8}
     - {x: 139, y: 233.20001}
     - {x: 139, y: 233.20001}
-    - {x: 262, y: 249.00002}
+    - {x: 496.60004, y: 253.8}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: a7a7739f22111e942b78fd7db0ee4889,
     type: 2}
@@ -617,19 +617,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: a0250000
-    m_LastClickedID: 9632
-    m_ExpandedIDs: 000000009a230000c8230000ca230000fa24000064250000a0250000102600000e27000034270000382700003c2700004427000046270000482700004a2700004c2700004e27000000ca9a3bffffff7f
+    m_SelectedIDs: 60250000
+    m_LastClickedID: 9568
+    m_ExpandedIDs: 0000000096230000c4230000c6230000f6240000602500009c250000082600001e27000044270000482700004c2700005427000056270000582700005a2700005c2700005e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -657,7 +657,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a230000c8230000ca230000fa24000064250000a0250000102600000e27000034270000382700003c2700004427000046270000482700004a2700004c2700004e27000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000096230000c4230000c6230000f6240000602500009c250000082600001e27000044270000482700004c2700005427000056270000582700005a2700005c2700005e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 781b000050a40100961b0000760000008800000020010000be1d00005a4000008840000078220000d8200000082100005e210000841f0000842100006021000092840600de52f8ffdeef000054280000ae070000740600003c05000050050000fe040000fc0400000c0500007e050000ea0400003e1c00005e1c0000460500004a050000ea1b0000ec1b0000421c0000941c0000ee16fffff01b0000541c000092050000acc9fefff804000036050000f2040000fa24000018250000f8240000442500008e2f000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
