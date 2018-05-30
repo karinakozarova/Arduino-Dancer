@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 using System.IO;
 
-public class Heartbeat_Controller : MonoBehaviour {
+public class Heartbeat_Controller : MonoBehaviour
+{
 
     public float currentBPM = 0.0f;
     public bool editingBPM = false;
@@ -13,7 +14,6 @@ public class Heartbeat_Controller : MonoBehaviour {
     private float decayTimer = 0.0f;
     private float prevBeatTimer = 0.0f;
     private float beatTimer = 0;
-    private float prevBPM = 0;
     private float animCounter = 0.0f;
     private Animator anim;
     private AudioSource audioSource;
@@ -23,26 +23,27 @@ public class Heartbeat_Controller : MonoBehaviour {
     private const float bpmChangeBuffer = 10.0f;
     private const float lerpLimit = 0.1f;
 
-	// Use this for initialization
-	void Start () {
-		anim = GetComponent<Animator> ();
+    // Use this for initialization
+    void Start()
+    {
+        anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         Song_Parser.Metadata meta = Game_Data.chosenSongData;
 
         StartCoroutine(LoadTrack(meta.musicPath, meta));
 
         if (meta.bpm != 0) originalBPM = meta.bpm;
-        else originalBPM = 120; 
+        else originalBPM = 120;
         currentBPM = originalBPM;
-        prevBPM = currentBPM;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		ControllerHandler();
+
+    // Update is called once per frame
+    void Update()
+    {
+        ControllerHandler();
         SongBPMChange();
         HeartBeat();
-        if (!audioSource.isPlaying && songLoaded) 
+        if (!audioSource.isPlaying && songLoaded)
             UnityEngine.SceneManagement.SceneManager.LoadScene(1); //Song is over
     }
 
@@ -52,7 +53,7 @@ public class Heartbeat_Controller : MonoBehaviour {
         WWW www = new WWW(url);
 
         while (!www.isDone) yield return null;
-        
+
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 
@@ -85,18 +86,17 @@ public class Heartbeat_Controller : MonoBehaviour {
     /// <summary>
     /// change BPM by sending the new rhythm using the spacebar
     /// </summary>
-	void ControllerHandler()
-	{
+    void ControllerHandler()
+    {
         beatTimer += Time.deltaTime;
-        if (anim.GetBool("isBeat")) anim.SetBool ("isBeat", false);
-		
-		if (Input.GetKeyDown (KeyCode.Space)) 
-		{
+        if (anim.GetBool("isBeat")) anim.SetBool("isBeat", false);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             editingBPM = true;
-			anim.SetBool ("isBeat", true);
-            
+            anim.SetBool("isBeat", true);
+
             //calc the BPM
-            prevBPM = currentBPM;
             currentBPM = (1.0f / beatTimer) * frames;
 
             prevBeatTimer = beatTimer;
@@ -105,7 +105,7 @@ public class Heartbeat_Controller : MonoBehaviour {
         }
 
         if ((decayTimer -= Time.deltaTime) <= 0) editingBPM = false;
-	}
+    }
 
     /// <summary>
     /// changes pitch of song
@@ -113,11 +113,11 @@ public class Heartbeat_Controller : MonoBehaviour {
     void SongBPMChange()
     {
         float newPitch = currentBPM / originalBPM;
-        if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit) 
+        if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit)
             audioSource.pitch = Mathf.Lerp(audioSource.pitch, currentBPM / originalBPM, Time.deltaTime);
         else
             audioSource.pitch = currentBPM / originalBPM;
-        
-         
+
+
     }
 }

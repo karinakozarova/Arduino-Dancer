@@ -20,11 +20,11 @@ public class IngameMenu : MonoBehaviour {
 
     public void RenderControls()
     {
-        SceneManager.LoadScene("Controls");
+        SceneManager.LoadScene(controlsScene);
     }
 
     public void RenderScore()
     {
-        SceneManager.LoadScene("Score");
+        SceneManager.LoadScene(scoreScene);
     }
 }
