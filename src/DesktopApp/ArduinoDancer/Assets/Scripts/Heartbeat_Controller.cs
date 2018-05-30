@@ -41,7 +41,7 @@ public class Heartbeat_Controller : MonoBehaviour
     void Update()
     {
         ControllerHandler();
-        SongBPMChange();
+       // SongBPMChange();
         HeartBeat();
         if (!audioSource.isPlaying && songLoaded)
             UnityEngine.SceneManagement.SceneManager.LoadScene(1); //Song is over
@@ -91,8 +91,10 @@ public class Heartbeat_Controller : MonoBehaviour
         beatTimer += Time.deltaTime;
         if (anim.GetBool("isBeat")) anim.SetBool("isBeat", false);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Input.GetKeyDown(KeyCode.N)){
+            audioSource.pitch =  1;
+            editingBPM = false;
+        }else if(Input.GetKeyDown(KeyCode.Space)) {
             editingBPM = true;
             anim.SetBool("isBeat", true);
 
@@ -102,7 +104,9 @@ public class Heartbeat_Controller : MonoBehaviour
             prevBeatTimer = beatTimer;
             decayTimer = prevBeatTimer * 1.5f;
             beatTimer = 0.0f;
+            SongBPMChange();
         }
+        
 
         if ((decayTimer -= Time.deltaTime) <= 0) editingBPM = false;
     }
@@ -112,12 +116,13 @@ public class Heartbeat_Controller : MonoBehaviour
     /// </summary>
     void SongBPMChange()
     {
+       
         float newPitch = currentBPM / originalBPM;
         if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit)
             audioSource.pitch = Mathf.Lerp(audioSource.pitch, currentBPM / originalBPM, Time.deltaTime);
         else
             audioSource.pitch = currentBPM / originalBPM;
 
-
+        Debug.Log(audioSource.pitch);
     }
 }
