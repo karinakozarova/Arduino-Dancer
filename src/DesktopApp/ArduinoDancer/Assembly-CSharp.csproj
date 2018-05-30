@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Song_Selector.cs" />
      <Compile Include="Assets\Scripts\Step_Generator.cs" />
      <Compile Include="Assets\Scripts\testingArduino.cs" />
+     <Compile Include="Assets\test.cs" />
      <None Include="Assets\CRTShader.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

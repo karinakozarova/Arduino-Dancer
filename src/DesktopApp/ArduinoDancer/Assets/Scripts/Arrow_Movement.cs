@@ -78,7 +78,6 @@ public class Arrow_Movement : MonoBehaviour {
                 if (!scoreApplied)
                 {
                     scoreApplied = true;
-                    scoreHandler.SendMessage("LoseScore");
                 }
             }
         }
