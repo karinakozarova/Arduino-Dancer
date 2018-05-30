@@ -23,46 +23,304 @@ Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopAp
 Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll (this message is harmless)
 Loading C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
-- Completed reload, in  0.026 seconds
+- Completed reload, in  0.233 seconds
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.640593 ms
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.086026 ms
-Default clip could not be found in attached animations list.
+UnloadTime: 3.602174 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.418175 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 289.
+Total: 0.662123 ms (FindLiveObjects: 0.074666 ms CreateObjectMapping: 0.028049 ms MarkObjects: 0.504494 ms  DeleteObjects: 0.053333 ms)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: 395)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Default clip could not be found in attached animations list.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.081284 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 391.
+Total: 1.046518 ms (FindLiveObjects: 0.049382 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.325926 ms  DeleteObjects: 0.655802 ms)
+
+1.005187
  
-(Filename:  Line: 395)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Default clip could not be found in attached animations list.
+1.040588
  
-(Filename:  Line: 395)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+1.091406
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 324.
-Total: 0.258765 ms (FindLiveObjects: 0.040691 ms CreateObjectMapping: 0.013827 ms MarkObjects: 0.199111 ms  DeleteObjects: 0.004345 ms)
+1.132299
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.171484
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.219335
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.9845806
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.015939
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.031818
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.042062
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.054922
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.086971
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.101795
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.13416
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.180475
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.203323
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.216582
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.24066
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.245219
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.271483
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.277715
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.30349
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.341338
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.378231
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.385978
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.439523
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.48086
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.524131
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.557558
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0.9872593
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.022248
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.073079
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.120795
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.160147
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1.207056
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.562963 ms
+UnloadTime: 0.889284 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 350.
-Total: 0.440098 ms (FindLiveObjects: 0.027259 ms CreateObjectMapping: 0.046617 ms MarkObjects: 0.295901 ms  DeleteObjects: 0.069925 ms)
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 1.422617 ms (FindLiveObjects: 0.041876 ms CreateObjectMapping: 0.031604 ms MarkObjects: 0.293530 ms  DeleteObjects: 1.055210 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.500938 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.401777 ms (FindLiveObjects: 0.069530 ms CreateObjectMapping: 0.040691 ms MarkObjects: 0.286814 ms  DeleteObjects: 0.003950 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.444839 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 1.330568 ms (FindLiveObjects: 0.107851 ms CreateObjectMapping: 0.079802 ms MarkObjects: 1.129481 ms  DeleteObjects: 0.010271 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.446419 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.399012 ms (FindLiveObjects: 0.036740 ms CreateObjectMapping: 0.030814 ms MarkObjects: 0.327506 ms  DeleteObjects: 0.003555 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.164642 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.426271 ms (FindLiveObjects: 0.060444 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.346864 ms  DeleteObjects: 0.004345 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.283556 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.999111 ms (FindLiveObjects: 0.095604 ms CreateObjectMapping: 0.034765 ms MarkObjects: 0.854518 ms  DeleteObjects: 0.011061 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.465382 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.369777 ms (FindLiveObjects: 0.041086 ms CreateObjectMapping: 0.032395 ms MarkObjects: 0.291950 ms  DeleteObjects: 0.003950 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.790123 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.391901 ms (FindLiveObjects: 0.041086 ms CreateObjectMapping: 0.032000 ms MarkObjects: 0.314469 ms  DeleteObjects: 0.003555 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.433777 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 311.
+Total: 0.438123 ms (FindLiveObjects: 0.040296 ms CreateObjectMapping: 0.031209 ms MarkObjects: 0.362271 ms  DeleteObjects: 0.003555 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 434.209778 ms
+UnloadTime: 1.059951 ms
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 357.
-Total: 0.374913 ms (FindLiveObjects: 0.041086 ms CreateObjectMapping: 0.013827 ms MarkObjects: 0.251654 ms  DeleteObjects: 0.067160 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 355.
+Total: 0.561382 ms (FindLiveObjects: 0.065580 ms CreateObjectMapping: 0.015012 ms MarkObjects: 0.384790 ms  DeleteObjects: 0.095604 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.511605 ms
+UnloadTime: 0.532543 ms
 Default clip could not be found in attached animations list.
  
 (Filename:  Line: 395)
@@ -76,178 +334,17 @@ Default clip could not be found in attached animations list.
 (Filename:  Line: 395)
 
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 329.
-Total: 0.268642 ms (FindLiveObjects: 0.038716 ms CreateObjectMapping: 0.026864 ms MarkObjects: 0.198321 ms  DeleteObjects: 0.003950 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.383210 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 293.
-Total: 0.345679 ms (FindLiveObjects: 0.060049 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.193975 ms  DeleteObjects: 0.076246 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 433.829315 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 357.
-Total: 0.294321 ms (FindLiveObjects: 0.039901 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.236642 ms  DeleteObjects: 0.003160 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.531358 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 329.
-Total: 0.318024 ms (FindLiveObjects: 0.038716 ms CreateObjectMapping: 0.026864 ms MarkObjects: 0.248098 ms  DeleteObjects: 0.003555 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 0.358716 ms (FindLiveObjects: 0.058864 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.282469 ms  DeleteObjects: 0.003160 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.950123 ms
+UnloadTime: 0.452740 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 350.
-Total: 0.391506 ms (FindLiveObjects: 0.056098 ms CreateObjectMapping: 0.030419 ms MarkObjects: 0.233481 ms  DeleteObjects: 0.070716 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 436.552460 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 357.
-Total: 0.361086 ms (FindLiveObjects: 0.041876 ms CreateObjectMapping: 0.027654 ms MarkObjects: 0.233481 ms  DeleteObjects: 0.057679 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.421135 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 0.395061 ms (FindLiveObjects: 0.088888 ms CreateObjectMapping: 0.025283 ms MarkObjects: 0.274568 ms  DeleteObjects: 0.005135 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.481975 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 291.
-Total: 0.321185 ms (FindLiveObjects: 0.056098 ms CreateObjectMapping: 0.015012 ms MarkObjects: 0.182518 ms  DeleteObjects: 0.066370 ms)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.231407 ms
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 393.
-Total: 1.151210 ms (FindLiveObjects: 0.039901 ms CreateObjectMapping: 0.044641 ms MarkObjects: 0.323555 ms  DeleteObjects: 0.742716 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.566913 ms
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 313.
-Total: 1.391803 ms (FindLiveObjects: 0.038321 ms CreateObjectMapping: 0.027259 ms MarkObjects: 0.261530 ms  DeleteObjects: 1.063901 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.511605 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 357.
-Total: 0.448000 ms (FindLiveObjects: 0.041086 ms CreateObjectMapping: 0.013827 ms MarkObjects: 0.331061 ms  DeleteObjects: 0.045432 ms)
-
-Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Drawing.dll (this message is harmless)
-Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Accessibility.dll (this message is harmless)
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libc
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
-Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\Mono.Posix.dll (this message is harmless)
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libc
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libc
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\libX11
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/libX11
-Platform assembly: C:\Users\Karina\Documents\GitHub\Arduino-Dancer\src\DesktopApp\ArduinoDancer\arduinodancer_Data\Managed\System.Xml.dll (this message is harmless)
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/.\lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
-Fallback handler could not load library C:/Users/Karina/Documents/GitHub/Arduino-Dancer/src/DesktopApp/ArduinoDancer/arduinodancer_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.506469 ms
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 291.
-Total: 0.646716 ms (FindLiveObjects: 0.041086 ms CreateObjectMapping: 0.045037 ms MarkObjects: 0.539654 ms  DeleteObjects: 0.019358 ms)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.647901 ms
-
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 393.
-Total: 1.057580 ms (FindLiveObjects: 0.040296 ms CreateObjectMapping: 0.037135 ms MarkObjects: 0.484345 ms  DeleteObjects: 0.495012 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 359.
+Total: 0.502913 ms (FindLiveObjects: 0.069925 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.320790 ms  DeleteObjects: 0.097185 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 508 -> priority: 1 
-  Thread -> id: 8 -> priority: 1 
-  Thread -> id: 3fc -> priority: 1 
-  Thread -> id: 1250 -> priority: 1 
+  Thread -> id: 33e4 -> priority: 1 
+  Thread -> id: 1ea4 -> priority: 1 
+  Thread -> id: c6c -> priority: 1 
+  Thread -> id: aa0 -> priority: 1 
