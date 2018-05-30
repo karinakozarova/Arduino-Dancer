@@ -54,8 +54,6 @@
      <Compile Include="Assets\Scripts\Game_Data.cs" />
      <Compile Include="Assets\Scripts\Heartbeat_Controller.cs" />
      <Compile Include="Assets\Scripts\IngameMenu.cs" />
-     <Compile Include="Assets\Scripts\Menu_Arrow.cs" />
-     <Compile Include="Assets\Scripts\Menu_Focus.cs" />
      <Compile Include="Assets\Scripts\Menu_Handler.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Quit_Tutorial.cs" />
