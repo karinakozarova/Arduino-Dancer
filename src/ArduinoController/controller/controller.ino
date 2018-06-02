@@ -1,11 +1,15 @@
-#include <SerialCommand.h>
-
 const int left_pin = 8;
 const int right_pin = 9;
 const int up_pin = 10;
 const int down_pin = 11;
-SerialCommand sCmd;
-
+/*
+WHITE UPDOWN
+ORANGE DOWN
+BLUE LEFT
+RED LEFTRIGHT
+VILAVO UP
+YELLOW RIGHT
+*/
 void setup() {
   // initalizing directions
   pinMode(left_pin,INPUT_PULLUP);
@@ -14,8 +18,6 @@ void setup() {
   pinMode(down_pin,INPUT_PULLUP);
   
   Serial.begin(9600); // for writing to serial monitor
-  while (!Serial);
- // sCmd.addCommand("PING", pingHandler);
 }
 
 void loop() {
@@ -38,6 +40,4 @@ void loop() {
   if(!down_status){ // down was clicked
     Serial.println("down");
   }
-
-  
 }
