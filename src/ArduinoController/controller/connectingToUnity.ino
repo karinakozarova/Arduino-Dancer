@@ -10,28 +10,28 @@ void setup() {
   pinMode(up_pin,INPUT_PULLUP);
   pinMode(down_pin,INPUT_PULLUP);
   
-  Serial.begin(9600); // for writing to serial monitor
+  Serial.begin(9600); 
 }
 
 void loop() {
-  int left_status =  digitalRead(left_pin); // reads button state for left
-  if(!left_status){ // left was clicked
+  int left_status =  digitalRead(left_pin); 
+  if(!left_status){ 
    Serial.write(1); 
    Serial.flush();
   }
-  int right_status =  digitalRead(right_pin); // reads button state for right
-  if(!right_status){ // right was clicked
+  int right_status =  digitalRead(right_pin); 
+  if(!right_status){ 
     Serial.write(2); 
     Serial.flush();
   }
-  int up_status =  digitalRead(up_pin); // reads button state for up 
-  if(!up_status){ // up was clicked
+  int up_status =  digitalRead(up_pin); 
+  if(!up_status){ 
       Serial.write(3); 
       Serial.flush();
   }
   
-  int down_status =  digitalRead(down_pin); // reads button state for down
-  if(!down_status){ // down was clicked
+  int down_status =  digitalRead(down_pin); 
+  if(!down_status){ 
     Serial.write(4);
     Serial.flush();
   }
