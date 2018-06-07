@@ -8,15 +8,14 @@ public class BG_Colour_Changer : MonoBehaviour {
 
     private const float lerpLimit = 0.025f;
 
-	// Use this for initialization
 	void Start () {
         camera = GetComponent<Camera>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-        HSBColor randCol = new HSBColor(Mathf.PingPong(Time.time * speed, 1), 1, 1);
-        randCol.s = randCol.s / 2;
-        camera.backgroundColor = randCol.ToColor();
+        int hue = Mathf.PingPong(Time.time * speed, 1); //a value between the time in seconds since the start of the frame * 0.5 < 1
+        HSBColor randCol = new HSBColor(hue, 1, 1); 
+        randCol.s = randCol.s / 2; //desaturate
+        camera.backgroundColor = randCol.ToColor(); // change background color
     }
 }

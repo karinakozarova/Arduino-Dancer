@@ -16,11 +16,7 @@ public class Apply_Shader : MonoBehaviour {
     {
         get
         {
-            if (_material == null)
-            {
-               // _material = new Material(shader);
-                _material.hideFlags = HideFlags.HideAndDontSave;
-            }
+            if (_material == null) _material.hideFlags = HideFlags.HideAndDontSave;
             return _material;
         }
     }
@@ -37,6 +33,5 @@ public class Apply_Shader : MonoBehaviour {
     void OnDisable()
     {
         if (_material)  DestroyImmediate(_material);
-
     }
 }

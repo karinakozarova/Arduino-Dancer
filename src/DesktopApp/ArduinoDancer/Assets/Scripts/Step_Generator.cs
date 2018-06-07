@@ -35,7 +35,6 @@ public class Step_Generator : MonoBehaviour {
     private Animator upAnim;
     private Animator rightAnim;
 
-	// Use this for initialization
 	void Start () {
         heart = GameObject.FindGameObjectWithTag("Player");
         heartAudio = heart.GetComponent<AudioSource>();
@@ -45,7 +44,6 @@ public class Step_Generator : MonoBehaviour {
         rightAnim = rightArrowBack.GetComponent<Animator>();
     }
 	
-	// Update is called once per frame
 	void Update () {
         if (leftAnim.GetBool("isLit")) leftAnim.SetBool("isLit", false);
         if (downAnim.GetBool("isLit")) downAnim.SetBool("isLit", false);

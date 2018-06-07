@@ -25,6 +25,9 @@ public class Menu_Handler : MonoBehaviour {
         
     }
 
+    /// <summary>
+    /// removes the warning DEPRECATING
+    /// </summary>
     IEnumerator DespawnWarning()
     {
         yield return new WaitForSeconds(2.5f);
@@ -48,7 +51,6 @@ public class Menu_Handler : MonoBehaviour {
     }
 
 
-
     /// <summary>
     /// quits game
     /// </summary>
@@ -64,11 +66,11 @@ public class Menu_Handler : MonoBehaviour {
     {
         System.Windows.Forms.FolderBrowserDialog fbd = new System.Windows.Forms.FolderBrowserDialog();
 
-        System.Windows.Forms.DialogResult result = fbd.ShowDialog();
-        if (result == System.Windows.Forms.DialogResult.OK)
+        System.Windows.Forms.DialogResult result = fbd.ShowDialog(); // shows dialog to select songs
+        if (result == System.Windows.Forms.DialogResult.OK)  
         {
-            Game_Data.songDirectory = fbd.SelectedPath;
-            if (Song_Parser.IsNullOrWhiteSpace(Game_Data.songDirectory)) Game_Data.validSongDir = false;
+            Game_Data.songDirectory = fbd.SelectedPath; // make the selected path the song directory
+            if(Song_Parser.IsNullOrWhiteSpace(Game_Data.songDirectory)) Game_Data.validSongDir = false;
             else Game_Data.validSongDir = true;
             
         }

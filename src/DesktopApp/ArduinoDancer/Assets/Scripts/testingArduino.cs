@@ -6,17 +6,15 @@ public class testingArduino : MonoBehaviour
 {
     SerialPort stream = new SerialPort("COM3", 9600);
 
-	// Use this for initialization
-	void Start () {
+    void Start () {
         if (!stream.IsOpen)
         {
-            Debug.Log("Stream is open");
             stream.Open();
+            Debug.Log("Stream is open");
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+    
+    void Update () {
         int res = 0;
         if (stream.IsOpen)
         {
@@ -49,5 +47,5 @@ public class testingArduino : MonoBehaviour
             Debug.Log("Right");
 
         }
-	}
+    }
 }

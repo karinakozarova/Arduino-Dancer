@@ -23,7 +23,6 @@ public class Heartbeat_Controller : MonoBehaviour
     private const float bpmChangeBuffer = 10.0f;
     private const float lerpLimit = 0.1f;
 
-    // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -37,11 +36,9 @@ public class Heartbeat_Controller : MonoBehaviour
         currentBPM = originalBPM;
     }
 
-    // Update is called once per frame
     void Update()
     {
         ControllerHandler();
-       // SongBPMChange();
         HeartBeat();
         if (!audioSource.isPlaying && songLoaded)
             UnityEngine.SceneManagement.SceneManager.LoadScene(1); //Song is over
@@ -65,7 +62,7 @@ public class Heartbeat_Controller : MonoBehaviour
     }
 
     /// <summary>
-    /// beat the heart
+    /// beat the heart DEPRECATING
     /// </summary>
     void HeartBeat()
     {
@@ -106,7 +103,6 @@ public class Heartbeat_Controller : MonoBehaviour
             beatTimer = 0.0f;
             SongBPMChange();
         }
-        
 
         if ((decayTimer -= Time.deltaTime) <= 0) editingBPM = false;
     }
@@ -122,7 +118,5 @@ public class Heartbeat_Controller : MonoBehaviour
             audioSource.pitch = Mathf.Lerp(audioSource.pitch, currentBPM / originalBPM, Time.deltaTime);
         else
             audioSource.pitch = currentBPM / originalBPM;
-
-        Debug.Log(audioSource.pitch);
     }
 }

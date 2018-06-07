@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour {
+    
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
 
@@ -12,14 +13,19 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1f;
         isPaused = false;
     }
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.P))
+    
+	void Update () 
+    {
+        if (Input.GetKeyDown(KeyCode.P)) // pause is triggered
         {
-            if (isPaused) Resume();
+            if(isPaused) Resume();
             else Pause();  
         }
 	}
 
+    /// <summary>
+    /// resumes the time so that the game continues
+    /// </summary>
     void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -27,6 +33,9 @@ public class PauseMenu : MonoBehaviour {
         isPaused = false;
     }
 
+    /// <summary>
+    /// stops the time so that the game is paused
+    /// </summary>
     void Pause()
     {
         pauseMenuUI.SetActive(true);

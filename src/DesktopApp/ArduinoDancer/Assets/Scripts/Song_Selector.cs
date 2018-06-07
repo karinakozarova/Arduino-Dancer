@@ -19,13 +19,11 @@ public class Song_Selector : MonoBehaviour {
     private float audioStartTime;
     private float audioLength;
 
-	// Use this for initialization
 	void Start () {
         audioSource = GetComponent<AudioSource>();
         Parse();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	    if (audioSource.time >= (audioStartTime + audioLength))
         {

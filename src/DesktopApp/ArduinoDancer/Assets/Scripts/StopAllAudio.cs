@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StopAllAudio : MonoBehaviour {
-    //Stop all sounds
     private AudioSource[] allAudioSources;
 
-	// Use this for initialization
 	void Start () {
+		// get all audio sources
         allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
-        foreach (AudioSource audioS in allAudioSources)
-        {
-            audioS.Stop();
-        }
+
+        foreach (AudioSource audioS in allAudioSources) // loop all audios
+        	audioS.Stop(); //stop this audio
 	}
 }
