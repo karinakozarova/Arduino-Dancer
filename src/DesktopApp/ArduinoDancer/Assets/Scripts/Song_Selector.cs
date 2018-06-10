@@ -23,7 +23,7 @@ public class Song_Selector : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         Parse();
 	}
-	
+
 	void Update () {
 	    if (audioSource.time >= (audioStartTime + audioLength))
         {
@@ -31,9 +31,9 @@ public class Song_Selector : MonoBehaviour {
             audioSource.time = audioStartTime;
         }
 
-        if (audioSource.volume < 0.95f) audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, Time.deltaTime);
-        else audioSource.volume = 1.0f;
-        
+        if (audioSource.volume < 0.95f) audioSource.volume = Mathf.Lerp(audioSource.volume, 1.0f, Time.deltaTime); //smooth transition
+        else audioSource.volume = 1.0f; //direct transition
+
 	}
     /// <summary>
     /// get song data when song is selected
@@ -42,7 +42,7 @@ public class Song_Selector : MonoBehaviour {
     {
         DirectoryInfo info = new DirectoryInfo(Game_Data.songDirectory);
         FileInfo[] smFiles = info.GetFiles("*.sm", SearchOption.AllDirectories);
-        for (int i = 0; i < smFiles.Length; i++)
+        for (int i = 0; i < smFiles.Length; i++) // loop all files
         {
             Song_Parser parser = new Song_Parser();
             Song_Parser.Metadata songData = parser.Parse(smFiles[i].FullName);
@@ -52,27 +52,47 @@ public class Song_Selector : MonoBehaviour {
 
             if (songData.valid)
             {
+                //Instantiate(Object original, Vector3 position, Quaternion rotation);
+                // Quaternion.identity - "no rotation" - the object is perfectly aligned with the world or parent axes
                 GameObject songObj = (GameObject)Instantiate(songSelectionTemplate, songSelectionList.transform.position, Quaternion.identity);
-                songObj.GetComponentInChildren<Text>().text = songData.title + " - " + songData.artist;
-                songObj.transform.parent = songSelectionList.transform;
-                songObj.transform.localScale = new Vector3(1, 1, 1); 
+                songObj.GetComponentInChildren<Text>().text = songData.title + " - " + songData.artist; //the text that is inside the new songObj becomes titl - artist (example - Bad Romance - Gaga)
+
+
+                songObj.transform.parent = songSelectionList.transform;//the songObj depends on the whole list position
+
+                songObj.transform.localScale = new Vector3(1, 1, 1); // scale of the transform relative to the parent.
+
 
                 //Get access to the button control
                 Button songBtn = songObj.GetComponentInChildren<Button>();
+
+                //if there is a bannerPath file inside of the songData object, load the banner instead of the text
                 if (File.Exists(songData.bannerPath))
                 {
-                    Texture2D texture = new Texture2D(275, 52);
-                    texture.LoadImage(File.ReadAllBytes(songData.bannerPath));
+                    Texture2D texture = new Texture2D(275, 52); // 275 width, 52 height,
+                    texture.LoadImage(File.ReadAllBytes(songData.bannerPath)); // add banner as texture image
+
+
+                    // init a sprite that uses the texture, a sharp edged (edge radius - 0) rectangle, a pivot equal to the vector and 100pixels per unit
                     songBtn.image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
-                    songBtn.image.material.SetColor("_Color", Color.white);
-                    songObj.GetComponentInChildren<Text>().enabled = false;
+                    songBtn.image.material.SetColor("_Color", Color.white); //no color tin over the button
+
+                    songObj.GetComponentInChildren<Text>().enabled = false; //don't show the button text
+
                 }
+
+                //once the button is clicked, start the song, and if there is an error, handle it
                 songBtn.onClick.AddListener(delegate { StartSong(songData); });
 
+                 //the event is triggered when the pointer enters the trigger zone of the button
                 EventTrigger.Entry entry = new EventTrigger.Entry();
                 entry.eventID = EventTriggerType.PointerEnter;
+
+
+                //if you aren't already playing the song preview start a song preview of the song
                 entry.callback.AddListener(eventData => { if (songData.musicPath != currentSongPath) { StartCoroutine(PreviewTrack(songData.musicPath)); } } );
 
+                //add the new trigger to the list of triggers in the button
                 songBtn.GetComponent<EventTrigger>().triggers.Add(entry);
             }
         }
@@ -85,19 +105,18 @@ public class Song_Selector : MonoBehaviour {
     /// <returns></returns>
     IEnumerator PreviewTrack(string musicPath)
     {
-       //  Debug.Log("Starting Preview for " + musicPath);
         string url = string.Format("file://{0}", musicPath);
         WWW www = new WWW(url);
 
         while (!www.isDone) yield return null;
-    
+
         AudioClip clip = www.GetAudioClip(false, false);
         audioSource.clip = clip;
 
-        audioSource.Play();
+        audioSource.Play(); // start audiosource
         audioSource.time = audioStartTime;
         currentSongPath = musicPath;
-        audioSource.volume = 0;
+        audioSource.volume = 0; // don't play videoclip sound
     }
 
     /// <summary>

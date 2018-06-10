@@ -11,10 +11,10 @@ public class BG_Colour_Changer : MonoBehaviour {
 	void Start () {
         camera = GetComponent<Camera>();
 	}
-	
+
 	void Update () {
-        int hue = Mathf.PingPong(Time.time * speed, 1); //a value between the time in seconds since the start of the frame * 0.5 < 1
-        HSBColor randCol = new HSBColor(hue, 1, 1); 
+        int hue = Mathf.PingPong(Time.time * speed, 1); // time in seconds since the start of the frame * 0.5< value < 1
+        HSBColor randCol = new HSBColor(hue, 1, 1);
         randCol.s = randCol.s / 2; //desaturate
         camera.backgroundColor = randCol.ToColor(); // change background color
     }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
 public static class Game_Data
 {
     public static string songDirectory = "";

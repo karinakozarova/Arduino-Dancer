@@ -49,9 +49,9 @@ public class Heartbeat_Controller : MonoBehaviour
         string url = string.Format("file://{0}", path);
         WWW www = new WWW(url);
 
-        while (!www.isDone) yield return null;
+        while (!www.isDone) yield return null; // download isnt finished
 
-        AudioClip clip = www.GetAudioClip(false, false);
+        AudioClip clip = www.GetAudioClip(false, false); // doesnt matter if it's 2d or 3d, no need to be downloaded completely
         audioSource.clip = clip;
 
         songLoaded = true;
@@ -68,8 +68,7 @@ public class Heartbeat_Controller : MonoBehaviour
     {
         if (songLoaded && !editingBPM)
         {
-            //Calc how long a beat is in seconds
-            float secondsPerBeat = frames / currentBPM;
+            float secondsPerBeat = frames / currentBPM; //Calc how long a beat is in seconds
 
             //If the time has passed for one beat, beat the heart and reset
             animCounter += Time.deltaTime;
@@ -89,9 +88,11 @@ public class Heartbeat_Controller : MonoBehaviour
         if (anim.GetBool("isBeat")) anim.SetBool("isBeat", false);
 
         if (Input.GetKeyDown(KeyCode.N)){
+            // restore pitch to the normal
             audioSource.pitch =  1;
             editingBPM = false;
         }else if(Input.GetKeyDown(KeyCode.Space)) {
+            // changing BPM
             editingBPM = true;
             anim.SetBool("isBeat", true);
 
@@ -112,11 +113,11 @@ public class Heartbeat_Controller : MonoBehaviour
     /// </summary>
     void SongBPMChange()
     {
-       
+
         float newPitch = currentBPM / originalBPM;
-        if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit)
+        if (Mathf.Abs(audioSource.pitch - newPitch) > lerpLimit) // smooth change
             audioSource.pitch = Mathf.Lerp(audioSource.pitch, currentBPM / originalBPM, Time.deltaTime);
-        else
+        else // just change
             audioSource.pitch = currentBPM / originalBPM;
     }
 }

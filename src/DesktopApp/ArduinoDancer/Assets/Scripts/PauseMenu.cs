@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour {
-    
+
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
 
@@ -13,13 +13,13 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1f;
         isPaused = false;
     }
-    
-	void Update () 
+
+	void Update ()
     {
         if (Input.GetKeyDown(KeyCode.P)) // pause is triggered
         {
             if(isPaused) Resume();
-            else Pause();  
+            else Pause();
         }
 	}
 

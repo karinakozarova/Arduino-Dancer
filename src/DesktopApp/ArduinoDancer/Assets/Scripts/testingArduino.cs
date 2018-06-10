@@ -13,7 +13,7 @@ public class testingArduino : MonoBehaviour
             Debug.Log("Stream is open");
         }
     }
-    
+
     void Update () {
         int res = 0;
         if (stream.IsOpen)
@@ -25,7 +25,6 @@ public class testingArduino : MonoBehaviour
                 Debug.Log(res);
             }
             catch { };
-
         }
 
         if (res == 1)

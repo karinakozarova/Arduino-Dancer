@@ -11,7 +11,7 @@ public class BG_Audio : MonoBehaviour {
     /// </summary>
     public static BG_Audio Instance
     {
-        get { return instance; }
+        get { return instance; } // returns the property value or the indexer element
     }
 
     /// <summary>
@@ -24,8 +24,8 @@ public class BG_Audio : MonoBehaviour {
             Destroy(this.gameObject);
             return;
         }
-        else instance = this; 
+        else instance = this;
 
-        DontDestroyOnLoad(this.gameObject); 
+        DontDestroyOnLoad(this.gameObject); // dont destroy automatically when loading a new scene
     }
 }

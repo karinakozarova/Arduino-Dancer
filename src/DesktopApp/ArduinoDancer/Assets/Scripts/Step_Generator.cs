@@ -43,18 +43,18 @@ public class Step_Generator : MonoBehaviour {
         upAnim = upArrowBack.GetComponent<Animator>();
         rightAnim = rightArrowBack.GetComponent<Animator>();
     }
-	
+
 	void Update () {
         if (leftAnim.GetBool("isLit")) leftAnim.SetBool("isLit", false);
         if (downAnim.GetBool("isLit")) downAnim.SetBool("isLit", false);
         if (rightAnim.GetBool("isLit")) rightAnim.SetBool("isLit", false);
         if (upAnim.GetBool("isLit")) upAnim.SetBool("isLit", false);
-        
+
 
         if (isInit && barCount < noteData.bars.Count)
         {
-            float pitch = heartAudio.pitch;
-            arrowSpeed = originalArrowSpeed * pitch;
+            float pitch = heartAudio.pitch; // by default - 1
+            arrowSpeed = originalArrowSpeed * pitch; // change arrow speed if pitch is changed
 
             distance = originalDistance;
             float timeOffset = distance * arrowSpeed;
@@ -76,6 +76,8 @@ public class Step_Generator : MonoBehaviour {
     {
         for (int i = 0; i < bar.Count; i++)
         {
+            //Instantiate(original, position, rotation)
+            //Quaternion.identity - no rotation
             if (bar[i].left)
             {
                 GameObject obj = (GameObject)Instantiate(leftArrow, new Vector3(leftArrowBack.transform.position.x, leftArrowBack.transform.position.y + distance, leftArrowBack.transform.position.z - 0.3f), Quaternion.identity);

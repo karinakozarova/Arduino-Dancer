@@ -52,7 +52,7 @@ public class Song_Parser
     public enum difficulties { beginner, easy, medium, hard, challenge };
 
     /// <summary>
-    /// parses song file 
+    /// parses song file
     /// </summary>
     /// <param name="newFilePath"> file location <param>
     /// <returns> songData </returns>
@@ -69,9 +69,10 @@ public class Song_Parser
 
         bool inNotes = false;
 
-        Metadata songData = new Metadata();
-        //Initialise Metadata
+        Metadata songData = new Metadata(); //Initialise Metadata
         songData.valid = true;         //If it encounters any major errors during parsing, this is set to false and the song cannot be selected
+
+        // default difficulties values
         songData.beginnerExists = false;
         songData.easyExists = false;
         songData.mediumExists = false;
@@ -83,7 +84,7 @@ public class Song_Parser
 
         string fileDir = Path.GetDirectoryName(filePath);
         if (!fileDir.EndsWith("\\") && !fileDir.EndsWith("/")) fileDir += "\\";
-        
+
 
         for (int i = 0; i < fileData.Count; i++)
         {
@@ -92,8 +93,7 @@ public class Song_Parser
             if (line.StartsWith("//")) continue;
             else if (line.StartsWith("#"))
             {
-                string key = line.Substring(0, line.IndexOf(':')).Trim('#').Trim(':').ToUpper();
-
+                string key = line.Substring(0, line.IndexOf(':')).Trim('#').Trim(':').ToUpper(); // if line = "#TITLE:Gangnam Style;" -> TITLE
                 switch (key)
                 {
                     case "TITLE":
@@ -159,7 +159,7 @@ public class Song_Parser
 
             if (inNotes)
             {
-                //Skip dance-double for now
+                //Skip lines about dance-double
                 if (line.ToLower().Contains("dance-double"))
                 {
                     for(int j = i; j < fileData.Count; j++)
@@ -168,7 +168,7 @@ public class Song_Parser
                             i = j - 1;
                             break;
                         }
-                    
+
                 }
 
                 //Check if it's a difficulty
@@ -190,7 +190,6 @@ public class Song_Parser
                             break;
                         }
                         else noteChart.Add(noteLine);
-                        
                     }
 
                     switch (difficulty.ToLower().Trim())
@@ -249,22 +248,24 @@ public class Song_Parser
             else if (line.EndsWith(":")) continue;
             else if (line.Length >= 4)
             {
+                // init default note values
                 Notes note = new Notes();
                 note.left = false;
                 note.down = false;
                 note.up = false;
                 note.right = false;
-               
+
+                // add values
                 if (line[0] != '0') note.left = true;
                 if (line[1] != '0') note.down = true;
-                if (line[2] != '0') note.up = true;                
+                if (line[2] != '0') note.up = true;
                 if (line[3] != '0') note.right = true;
-                
-                bar.Add(note);
+
+                bar.Add(note); // add this note to the list
             }
         }
 
-        return noteData;
+        return noteData; // returned parsed notes
     }
 
     /// <summary>
@@ -274,9 +275,9 @@ public class Song_Parser
     /// <returns>true or false</returns>
     public static bool IsNullOrWhiteSpace(string value)
     {
-        if (value != null)        
-            for (int i = 0; i < value.Length; i++)            
-                if (!char.IsWhiteSpace(value[i])) return false;               
+        if (value != null)
+            for (int i = 0; i < value.Length; i++)
+                if (!char.IsWhiteSpace(value[i])) return false;
         return true;
     }
 }

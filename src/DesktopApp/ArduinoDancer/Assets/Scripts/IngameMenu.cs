@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class IngameMenu : MonoBehaviour {
-    
+
     string mainMenuScene = "Main Menu";
     string controlsScene = "Controls";
     string scoreScene = "Score";
-
 
     /// <summary>
     /// loads the main meni

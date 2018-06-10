@@ -22,7 +22,7 @@ public class Menu_Handler : MonoBehaviour {
             StartCoroutine(DespawnWarning());
         }
         else SceneManager.LoadScene(1);
-        
+
     }
 
     /// <summary>
@@ -67,12 +67,11 @@ public class Menu_Handler : MonoBehaviour {
         System.Windows.Forms.FolderBrowserDialog fbd = new System.Windows.Forms.FolderBrowserDialog();
 
         System.Windows.Forms.DialogResult result = fbd.ShowDialog(); // shows dialog to select songs
-        if (result == System.Windows.Forms.DialogResult.OK)  
+        if (result == System.Windows.Forms.DialogResult.OK)
         {
             Game_Data.songDirectory = fbd.SelectedPath; // make the selected path the song directory
             if(Song_Parser.IsNullOrWhiteSpace(Game_Data.songDirectory)) Game_Data.validSongDir = false;
             else Game_Data.validSongDir = true;
-            
         }
     }
 }

@@ -18,14 +18,12 @@ public class Score_Handler : MonoBehaviour
     private const float scoreVal = 100.0f;
     private const float strumOffset = 0.1f;
 
-    // Use this for initialization
     void Start()
     {
         heart = GameObject.FindGameObjectWithTag("Player");
         heartAudio = heart.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         multiplier = heartAudio.pitch;
