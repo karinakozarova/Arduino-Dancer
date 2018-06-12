@@ -57,11 +57,8 @@ public class Song_Selector : MonoBehaviour {
                 GameObject songObj = (GameObject)Instantiate(songSelectionTemplate, songSelectionList.transform.position, Quaternion.identity);
                 songObj.GetComponentInChildren<Text>().text = songData.title + " - " + songData.artist; //the text that is inside the new songObj becomes titl - artist (example - Bad Romance - Gaga)
 
-
                 songObj.transform.parent = songSelectionList.transform;//the songObj depends on the whole list position
-
                 songObj.transform.localScale = new Vector3(1, 1, 1); // scale of the transform relative to the parent.
-
 
                 //Get access to the button control
                 Button songBtn = songObj.GetComponentInChildren<Button>();
@@ -72,13 +69,11 @@ public class Song_Selector : MonoBehaviour {
                     Texture2D texture = new Texture2D(275, 52); // 275 width, 52 height,
                     texture.LoadImage(File.ReadAllBytes(songData.bannerPath)); // add banner as texture image
 
-
                     // init a sprite that uses the texture, a sharp edged (edge radius - 0) rectangle, a pivot equal to the vector and 100pixels per unit
                     songBtn.image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
                     songBtn.image.material.SetColor("_Color", Color.white); //no color tin over the button
 
                     songObj.GetComponentInChildren<Text>().enabled = false; //don't show the button text
-
                 }
 
                 //once the button is clicked, start the song, and if there is an error, handle it
@@ -87,7 +82,6 @@ public class Song_Selector : MonoBehaviour {
                  //the event is triggered when the pointer enters the trigger zone of the button
                 EventTrigger.Entry entry = new EventTrigger.Entry();
                 entry.eventID = EventTriggerType.PointerEnter;
-
 
                 //if you aren't already playing the song preview start a song preview of the song
                 entry.callback.AddListener(eventData => { if (songData.musicPath != currentSongPath) { StartCoroutine(PreviewTrack(songData.musicPath)); } } );
